@@ -1,0 +1,34 @@
+.about {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 15px;
+	@include clearfix;
+}
+
+.about-row {
+	@include clearfix;
+	padding-bottom: 15px;
+}
+
+.about-img {
+	width: 50%;
+	float: left;
+}
+
+.about-text {
+	width: 50%;
+	float: left;
+	position: relative;
+}
+
+.img-left {
+	.about-img {
+		padding-right: 15px;
+	}
+}
+
+.img-right {
+	.about-text {
+		padding-right: 15px;
+	}
+}
