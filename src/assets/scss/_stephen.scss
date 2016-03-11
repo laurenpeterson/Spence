@@ -1,0 +1,65 @@
+// background image
+.full-img {
+	background-image: url('../images/red-beard.jpg');
+	// background-image: url('../images/stephen.jpg');
+	background-position: 37% center;
+}
+
+//tile text colors n such
+.feature-text {
+	// margin-top: 12%;
+	display: inline-block;
+	text-align: left;
+	padding: 50px;
+	
+	h1 {
+		color: #FCC921;
+		font-size: 5em;
+	}
+
+	h2 {
+		color: #FFF;
+
+		// @include breakpoint(s-mobile) {
+		// 	color: #FFF;
+		// }
+	}
+}
+
+//the "about" link that opens the drawer
+.open-trigger {
+	// color: #000;
+	font-weight: 700;
+	padding: 50px;
+	// background-color: rgba(255, 255, 255, 0.5);
+
+	&:before {
+		top: 41px;
+	}
+
+	@include breakpoint(s-mobile) {
+		color: #FFF;
+		padding: 10px 20px 10px;
+	}
+}
+
+//social icons
+.icon {
+	color: #FFF ;
+
+	&:hover {
+		color: #FCC921;
+	}
+}
+
+.side-drawer {
+	background-color: #A12D0E;
+
+	.open-trigger {
+		display: none;
+
+		@include breakpoint(s-mobile) {
+			display: block;
+		}
+	}
+}

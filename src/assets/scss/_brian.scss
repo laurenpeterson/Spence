@@ -1,0 +1,37 @@
+.full-img {
+	background-image: url('../images/space-no-astro.jpg');
+	background-position: center center;
+}
+
+.feature-text {
+	padding-top: 10%;
+
+	@include breakpoint(tablet) {
+		padding-top: 16%;
+	}
+
+	@include breakpoint(s-mobile) {
+		padding-top: 26%;
+	}
+
+	h1 {
+		color: #7998B5;
+	}
+
+	h2 {
+		color: #FFF;
+	}
+}
+
+.astro {
+	width: 9%;
+	margin-top: 20px;
+
+	@include breakpoint(s-mobile) {
+		width: 38%;
+	}
+}
+
+.side-drawer {
+	background-color: #7998B5;
+}

@@ -1,0 +1,52 @@
+.full-img {
+	background-image: url('../images/the-spences.jpg');
+	background-position: center center;
+}
+
+.feature-text {
+	padding-top: 5%;
+
+	h1 {
+		color: #000;
+	}
+
+	h2 {
+		color: #000;
+		margin-bottom: -17px;
+
+		@include breakpoint(s-mobile) {
+			margin-bottom: -11px;
+		}
+	}
+
+	@include breakpoint(s-mobile) {
+		padding-top: 25%;
+	}
+}
+
+.open-trigger {
+	color: #000;
+}
+
+.side-drawer {
+	background-color: #84B8C4;
+}
+
+.photo-cred {
+	position: absolute;
+	left: 50px;
+	bottom: 40px;
+	margin: 0;
+	font-size: 13px;
+	color: #84B8C4;
+
+	&:hover {
+		color: #FFF;
+	}
+
+	@include breakpoint(tablet) {
+		position: static;
+		margin-top: 20px;
+		color: #000;
+	}
+}

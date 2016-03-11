@@ -7,7 +7,9 @@ var gulp = require('gulp'),
   uglify = require('gulp-uglify'),
   livereload = require('gulp-livereload'),
   changed = require('gulp-changed'),
-  del = require('del');
+  del = require('del'),
+  gulpsync = require('gulp-sync')(gulp),
+  imagemin = require('imagemin');
 
 // CSS
 gulp.task('styles', function() {
@@ -26,16 +28,17 @@ gulp.task('scripts', function() {
   return gulp.src('src/assets/js/*.js')
     .pipe(concat('main.js'))
     .pipe(gulp.dest('./target/assets/js/'))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(uglify())
-    .pipe(gulp.dest('./target/assets/js/'))
+    // .pipe(rename({suffix: '.min'}))
+    // .pipe(uglify())
+    // .pipe(gulp.dest('./target/assets/js/'))
+
 });
 
 // Copy files
-gulp.task('copy', function () {
-  gulp.src('./src/**/*.{html,jpg,png,gif,jpeg}')
-    .pipe(changed('target'))
-    .pipe(gulp.dest('target'))
+gulp.task('copyfiles', function () {
+  return gulp.src('./src/**/*.{png,jpeg,jpg,html}')
+    .pipe(changed('./target'))
+    .pipe(gulp.dest('./target'))
     .pipe(livereload());
 });
 
@@ -43,8 +46,9 @@ gulp.task('copy', function () {
 gulp.task('watch', function() {
 	livereload.listen();
 	gulp.watch('src/assets/scss/*.scss', ['styles']);
-  gulp.watch('src/assets/js/*.js', ['scripts'])
-  gulp.watch("./src/**/*.{html,png,jpeg,jpg}", ['copy']);
+  gulp.watch('src/assets/js/*.js', ['scripts']);
+  gulp.watch("./src/**/*.{png,jpeg,jpg,html}", ['copyfiles']);
+ 
 });
 
 // Clean
@@ -53,11 +57,7 @@ gulp.task('clean', function (cb) {
 });
 
 // Default task
-gulp.task('dev', ['clean'], function () {
-  gulp.start('styles', 'scripts', 'copy', 'watch');
-});
+gulp.task('default', gulpsync.sync(['styles', 'scripts', 'copyfiles'], ['clean']));
 
-
-// gulp.task('default', function() {
-//   // place code for your default task here
-// });
+// Watch task
+gulp.task('dev', gulpsync.sync(['styles', 'scripts', 'copyfiles', 'watch'], ['clean']));
