@@ -187,12 +187,12 @@ a {
   color: #2e416a;
   text-decoration: none; }
 
-.spence {
+.hill {
   margin: 0 auto;
   font-family: "Lato", sans-serif;
   color: #2e416a;
   height: 100%; }
-  .spence .full-img {
+  .hill .full-img {
     background-image: url("../images/pup.jpg");
     width: 100%;
     height: 100%;
@@ -204,13 +204,13 @@ a {
     transition: left 0.35s;
     box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.3);
     z-index: 1; }
-  .spence .feature-text {
+  .hill .feature-text {
     margin: 0 auto;
     text-align: center; }
     @media (max-width: 480px) {
-      .spence .feature-text {
+      .hill .feature-text {
         font-size: 10px; } }
-  .spence footer {
+  .hill footer {
     padding: 40px;
     text-align: center;
     position: absolute;
@@ -220,9 +220,9 @@ a {
             transform: translateX(-50%);
     width: 100%; }
     @media (max-width: 480px) {
-      .spence footer {
+      .hill footer {
         padding: 40px 20px; } }
-  .spence .icon {
+  .hill .icon {
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -231,13 +231,13 @@ a {
     font-size: 40px;
     border-bottom: none;
     transition: color 0.4s; }
-    .spence .icon:hover {
+    .hill .icon:hover {
       color: #000;
       border-bottom: none; }
-  .spence .icon-first {
+  .hill .icon-first {
     font-size: 41px;
     margin-right: 10px; }
-  .spence .open-trigger {
+  .hill .open-trigger {
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -248,18 +248,18 @@ a {
     right: 0;
     top: 0;
     z-index: 2; }
-    .spence .open-trigger:before {
+    .hill .open-trigger:before {
       height: 0;
       width: 0;
       transition: height 1s, width 1s; }
-  .spence .icon-cancel:before {
+  .hill .icon-cancel:before {
     position: absolute;
     top: 22px;
     right: 15px;
     width: 20px;
     height: 20px;
     font-size: 2em; }
-  .spence .side-drawer {
+  .hill .side-drawer {
     width: 400px;
     background-color: #2e416a;
     height: 100%;
@@ -268,35 +268,35 @@ a {
     position: absolute;
     right: 0; }
     @media (max-width: 480px) {
-      .spence .side-drawer {
+      .hill .side-drawer {
         width: 100%;
         height: 100%;
         position: relative;
         float: right; } }
     @media (max-width: 480px) {
-      .spence .side-drawer p {
+      .hill .side-drawer p {
         font-size: 14px;
         line-height: 130%; } }
-    .spence .side-drawer h2 {
+    .hill .side-drawer h2 {
       font-size: 14px; }
-    .spence .side-drawer .sig {
+    .hill .side-drawer .sig {
       font-size: 2.5em;
       font-family: "Heartwell", "Lato", sans-serif;
       text-transform: none;
       margin-bottom: 40px; }
-  .spence .site-buttons {
+  .hill .site-buttons {
     position: absolute;
     bottom: 40px; }
-  .spence .slide-trigger {
+  .hill .slide-trigger {
     cursor: pointer; }
-    .spence .slide-trigger:before {
+    .hill .slide-trigger:before {
       content: '+';
       margin-right: 10px; }
-    .spence .slide-trigger.trigger-on:before {
+    .hill .slide-trigger.trigger-on:before {
       content: '\2013'; }
-    .spence .slide-trigger + p {
+    .hill .slide-trigger + p {
       display: none; }
-  .spence .site-button {
+  .hill .site-button {
     display: inline-block;
     font-family: "Lato", sans-serif;
     letter-spacing: 3px;
@@ -309,30 +309,30 @@ a {
     background-color: rgba(255, 255, 255, 0.2);
     transition: color 0.35s, border 0.35s; }
     @media (max-width: 480px) {
-      .spence .site-button {
+      .hill .site-button {
         width: 120px; } }
-    .spence .site-button:hover {
+    .hill .site-button:hover {
       color: #FFF;
       border: 2px solid #FFF;
       background-size: cover;
       background-repeat: no-repeat; }
-    .spence .site-button:first-of-type {
+    .hill .site-button:first-of-type {
       margin-right: 20px; }
-  .spence .brian-button:hover {
+  .hill .brian-button:hover {
     background-image: url("../images/space-button.jpg"); }
-  .spence .lauren-button:hover {
+  .hill .lauren-button:hover {
     background-image: url("../images/pug-button.jpg"); }
-  .spence .site-link {
+  .hill .site-link {
     color: #FFF;
     font-family: "Lato", sans-serif;
     font-weight: 300;
     display: block;
     margin: 10px 0;
     transtion: color 0.35s; }
-    .spence .site-link:hover {
+    .hill .site-link:hover {
       color: #000;
       text-decoration: underline; }
-  .spence:after {
+  .hill:after {
     clear: both;
     content: "";
     display: table; }
@@ -340,123 +340,43 @@ a {
 html, body {
   height: 100%; }
 
-#brian .full-img {
-  background-image: url("../images/space-no-astro.jpg");
-  background-position: center center; }
-
-#brian .feature-text {
-  padding-top: 10%; }
-  @media (max-width: 979px) {
-    #brian .feature-text {
-      padding-top: 16%; } }
-  @media (max-width: 480px) {
-    #brian .feature-text {
-      padding-top: 26%; } }
-  #brian .feature-text h1 {
-    color: #7998B5; }
-  #brian .feature-text h2 {
-    color: #FFF; }
-
-#brian .astro {
-  width: 9%;
-  margin-top: 20px; }
-  @media (max-width: 480px) {
-    #brian .astro {
-      width: 38%; } }
-
-#brian .side-drawer {
-  background-color: #7998B5; }
-
-#lauren .feature-text h1 {
-  padding-top: 24%;
-  color: #FFF; }
-  @media (max-width: 480px) {
-    #lauren .feature-text h1 {
-      padding-top: 64%; } }
-
-#lauren .feature-text h2 {
-  color: #000; }
-
-#lauren .icon {
-  color: #000; }
-  #lauren .icon:hover {
-    color: #FFF; }
-
-#lauren.spence {
-  background-color: #2e416a; }
-
-#the .full-img {
-  background-image: url("../images/the-spences.jpg");
-  background-position: center center; }
-
-#the .feature-text {
-  padding-top: 5%; }
-  #the .feature-text h1 {
-    color: #000; }
-  #the .feature-text h2 {
-    color: #000;
-    margin-bottom: -17px; }
-    @media (max-width: 480px) {
-      #the .feature-text h2 {
-        margin-bottom: -11px; } }
-  @media (max-width: 480px) {
-    #the .feature-text {
-      padding-top: 25%; } }
-
-#the .open-trigger {
-  color: #000; }
-
-#the .side-drawer {
-  background-color: #84B8C4; }
-
-#the .photo-cred {
-  position: absolute;
-  left: 50px;
-  bottom: 40px;
-  margin: 0;
-  font-size: 13px;
-  color: #84B8C4; }
-  #the .photo-cred:hover {
-    color: #FFF; }
-  @media (max-width: 979px) {
-    #the .photo-cred {
-      position: static;
-      margin-top: 20px;
-      color: #000; } }
-
-#stephen .full-img {
-  background-image: url("../images/red-beard.jpg");
-  background-position: 37% center; }
-
-#stephen .feature-text {
-  display: inline-block;
-  text-align: left;
-  padding: 50px; }
-  #stephen .feature-text h1 {
-    color: #FCC921;
-    font-size: 5em; }
-  #stephen .feature-text h2 {
-    color: #FFF; }
-
-#stephen .open-trigger {
-  font-weight: 700;
-  padding: 50px; }
-  #stephen .open-trigger:before {
-    top: 41px; }
-  @media (max-width: 480px) {
-    #stephen .open-trigger {
-      color: #FFF;
-      padding: 10px 20px 10px; } }
-
-#stephen .icon {
-  color: #FFF; }
-  #stephen .icon:hover {
-    color: #FCC921; }
-
-#stephen .side-drawer {
+#stephen {
   background-color: #A12D0E; }
-  #stephen .side-drawer .open-trigger {
-    display: none; }
+  #stephen .full-img {
+    background-image: url("../images/red-beard.jpg");
+    background-position: 37% center; }
+  #stephen .feature-text {
+    display: inline-block;
+    text-align: left;
+    padding: 50px; }
     @media (max-width: 480px) {
-      #stephen .side-drawer .open-trigger {
+      #stephen .feature-text {
+        text-align: center;
         display: block; } }
+    #stephen .feature-text h1 {
+      color: #FCC921;
+      font-size: 5em; }
+    #stephen .feature-text h2 {
+      color: #FFF; }
+  #stephen .open-trigger {
+    font-weight: 700;
+    padding: 50px; }
+    #stephen .open-trigger:before {
+      top: 41px; }
+    @media (max-width: 480px) {
+      #stephen .open-trigger {
+        color: #FFF;
+        padding: 20px 20px 10px; }
+        #stephen .open-trigger:before {
+          top: 12px; } }
+  #stephen .icon {
+    color: #FFF; }
+    #stephen .icon:hover {
+      color: #FCC921; }
+  #stephen .side-drawer {
+    background-color: #A12D0E; }
+    #stephen .side-drawer .open-trigger {
+      display: none; }
+      @media (max-width: 480px) {
+        #stephen .side-drawer .open-trigger {
+          display: block; } }

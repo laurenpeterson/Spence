@@ -1,16 +1,20 @@
 // background image
 .full-img {
 	background-image: url('../images/red-beard.jpg');
-	// background-image: url('../images/stephen.jpg');
+	// change to this image if you want :P background-image: url('../images/stephen.jpg');
 	background-position: 37% center;
 }
 
-//tile text colors n such
+//name and tile text colors n such
 .feature-text {
-	// margin-top: 12%;
 	display: inline-block;
 	text-align: left;
 	padding: 50px;
+
+	@include breakpoint(s-mobile) {
+		text-align: center;
+		display: block;
+	}
 	
 	h1 {
 		color: #FCC921;
@@ -19,16 +23,11 @@
 
 	h2 {
 		color: #FFF;
-
-		// @include breakpoint(s-mobile) {
-		// 	color: #FFF;
-		// }
 	}
 }
 
 //the "about" link that opens the drawer
 .open-trigger {
-	// color: #000;
 	font-weight: 700;
 	padding: 50px;
 	// background-color: rgba(255, 255, 255, 0.5);
@@ -39,7 +38,11 @@
 
 	@include breakpoint(s-mobile) {
 		color: #FFF;
-		padding: 10px 20px 10px;
+		padding: 20px 20px 10px;
+
+		&:before {
+			top: 12px;
+		}
 	}
 }
 
@@ -52,6 +55,7 @@
 	}
 }
 
+//side drawer with the "about me" text
 .side-drawer {
 	background-color: #A12D0E;
 

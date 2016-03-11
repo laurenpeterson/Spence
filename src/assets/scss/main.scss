@@ -5,9 +5,8 @@
 @import 'typography';
 @import 'mixins';
 
-.spence {
+.hill {
 	@import 'stub-site';
-
 	margin: 0 auto;
 	font-family: $font-sans;
 	color: $dark-text;
@@ -19,21 +18,7 @@ html, body {
 	height: 100%;
 }
 
-#brian {
-	@import 'brian';
-}
-
-#lauren {
-	@import 'lauren';
-	&.spence {
-		background-color: #2e416a;
-	}
-}
-
-#the {
-	@import 'the';
-}
-
 #stephen {
 	@import 'stephen';
+	background-color: #A12D0E;
 }
