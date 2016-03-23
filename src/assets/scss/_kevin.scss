@@ -1,0 +1,47 @@
+.full-img {
+	background-image: url('../images/chess.jpg');
+}
+
+.feature-text {
+	margin-top: 12%;
+
+	@include breakpoint(s-mobile) {
+		margin-top: 40%;
+	}
+	
+	h1 {
+		color: #E65E3A;
+	}
+
+	h2 {
+		color: #FFF;
+	}
+}
+
+.open-trigger {
+	font-weight: 700;
+
+	@include breakpoint(s-mobile) {
+		padding: 20px 20px 10px;
+	}
+}
+
+.icon {
+	color: #FFF ;
+
+	&:hover {
+		color: #E65E3A;
+	}
+}
+
+.side-drawer {
+	background-color: #E65E3A;
+
+	.open-trigger {
+		display: none;
+
+		@include breakpoint(s-mobile) {
+			display: block;
+		}
+	}
+}

@@ -5,7 +5,7 @@
 @import 'typography';
 @import 'mixins';
 
-.hill {
+.knopp {
 	@import 'stub-site';
 	margin: 0 auto;
 	font-family: $font-sans;
@@ -18,7 +18,7 @@ html, body {
 	height: 100%;
 }
 
-#stephen {
-	@import 'stephen';
+#kevin {
+	@import 'kevin';
 	background-color: #A12D0E;
 }
