@@ -6,7 +6,9 @@
 @import 'mixins';
 
 .spence {
+	@import 'resume';
 	@import 'stub-site';
+
 
 	margin: 0 auto;
 	font-family: $font-sans;

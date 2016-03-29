@@ -4,23 +4,33 @@
 
   $(function () {
       // document is ready
-    var $drawerTrigger = $('.open-trigger'),
+    var $drawerTrigger = $('.drawer-link'),
     		$fullImg = $('.full-img'),
-    		$drawer = $('.side-drawer'),
-    		$textToggle = $('.slide-trigger');
+    		$textToggle = $('.slide-trigger'),
+        $resTrigger = $('.resume-trigger'),
+        $resSection = $('.resume-panel');
 
 
     $drawerTrigger.click(function(e){
     	e.preventDefault();
-    	var drawerWidth = $drawer.outerWidth();
-    	if (!$(this).hasClass('icon-cancel')) {
+      var drawerType = $(this).data('drawer-type');
+      var $currentDrawer = $('.' + drawerType + '-drawer');
+    	var drawerWidth = $currentDrawer.outerWidth();
+    	if (!$(this).hasClass('icon-cancel') && drawerType == "about") {
     		$fullImg.css('left', - drawerWidth);
-    		$drawerTrigger.addClass('icon-cancel');
-    	} else {
+        $currentDrawer.addClass('active-drawer');
+    		$(this).addClass('icon-cancel');
+    	} else if (!$(this).hasClass('icon-cancel') && drawerType == "resume"){
+        $fullImg.css('left', drawerWidth);
+        $currentDrawer.addClass('active-drawer');
+        $(this).addClass('icon-cancel');
+      } else {
     		$fullImg.css('left', '0');
-    		$drawerTrigger.removeClass('icon-cancel');
+        setTimeout( function() {
+          $currentDrawer.removeClass('active-drawer');
+        }, 300);
+    		$(this).removeClass('icon-cancel');
     	}
-
     });
 
     $textToggle.click(function(){

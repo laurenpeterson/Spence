@@ -192,8 +192,86 @@ a {
   font-family: "Lato", sans-serif;
   color: #2e416a;
   height: 100%; }
+  .spence .resume-panel {
+    width: 90%;
+    background-color: #CCC;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 50px 0; }
+  .spence .resume-container {
+    width: 100%;
+    max-width: 1180px;
+    background-color: #FFF;
+    margin: 0 auto;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    padding: 100px 100px; }
+    .spence .resume-container:after {
+      clear: both;
+      content: "";
+      display: table; }
+    .spence .resume-container p {
+      margin: 0;
+      line-height: 1.6em;
+      font-size: 0.9375em; }
+      .spence .resume-container p span {
+        font-weight: 700; }
+    .spence .resume-container h2 {
+      margin-bottom: 5px; }
+    .spence .resume-container h3 {
+      font-weight: 700;
+      margin-bottom: 0px;
+      margin-top: 10px;
+      font-size: 1.125em;
+      line-height: 1.6em; }
+  .spence .res-heading-section {
+    margin-bottom: 30px;
+    margin-left: 20%;
+    padding-left: 20px; }
+    .spence .res-heading-section p {
+      font-size: 0.875em;
+      line-height: 1.4em; }
+    .spence .res-heading-section h2 {
+      font-size: 1.5em; }
+    .spence .res-heading-section .res-name {
+      font-family: "Heartwell", "Lato", sans-serif;
+      text-transform: none;
+      font-size: 3em; }
+  .spence .resume-column {
+    float: left;
+    width: 40%; }
+  .spence .resume-column-thirds {
+    float: left;
+    width: 33.33%; }
+  .spence .res-section {
+    width: 100%;
+    margin-top: 20px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    .spence .res-section:after {
+      clear: both;
+      content: "";
+      display: table; }
+  .spence .res-section-heading {
+    width: 20%;
+    float: left;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1em;
+    line-height: 1.6em;
+    text-align: right; }
+  .spence .res-section-body {
+    width: 80%;
+    margin-left: 20px; }
+    .spence .res-section-body h3:first-of-type {
+      margin-top: 0; }
   .spence .full-img {
-    background-image: url("../images/pup.jpg");
+    background-image: url("../images/desk.jpg");
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -203,7 +281,7 @@ a {
     left: 0;
     transition: left 0.35s;
     box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.3);
-    z-index: 1; }
+    z-index: 2; }
   .spence .feature-text {
     margin: 0 auto;
     text-align: center; }
@@ -237,31 +315,39 @@ a {
   .spence .icon-first {
     font-size: 41px;
     margin-right: 10px; }
-  .spence .open-trigger {
+  .spence .drawer-link {
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 14px;
     color: #FFF;
-    padding: 20px 50px;
+    padding: 30px;
     position: absolute;
     right: 0;
     top: 0;
     z-index: 2; }
-    .spence .open-trigger:before {
+    @media (max-width: 480px) {
+      .spence .drawer-link {
+        padding: 20px; } }
+    .spence .drawer-link:before {
       height: 0;
       width: 0;
       transition: height 1s, width 1s; }
-  .spence .icon-cancel:before {
-    position: absolute;
-    top: 22px;
-    right: 15px;
-    width: 20px;
-    height: 20px;
-    font-size: 2em; }
+  .spence .resume-trigger {
+    right: auto;
+    left: 0; }
+  .spence .icon-cancel {
+    padding-right: 50px; }
+    .spence .icon-cancel:before {
+      position: absolute;
+      top: 22px;
+      right: 15px;
+      width: 20px;
+      height: 20px;
+      font-size: 2em; }
   .spence .side-drawer {
     width: 400px;
-    background-color: #2e416a;
+    background-color: #84B8C4;
     height: 100%;
     padding: 10% 40px 40px;
     color: #FFF;
@@ -284,6 +370,14 @@ a {
       font-family: "Heartwell", "Lato", sans-serif;
       text-transform: none;
       margin-bottom: 40px; }
+    .spence .side-drawer .open-trigger {
+      display: none; }
+      @media (max-width: 480px) {
+        .spence .side-drawer .open-trigger {
+          display: block; } }
+  .spence .active-drawer {
+    z-index: 1;
+    display: block; }
   .spence .site-buttons {
     position: absolute;
     bottom: 40px; }
@@ -360,6 +454,10 @@ html, body {
 #brian .astro {
   width: 9%;
   margin-top: 20px; }
+  @media (max-width: 767px) {
+    #brian .astro {
+      width: 18%;
+      margin-top: 60px; } }
   @media (max-width: 480px) {
     #brian .astro {
       width: 38%; } }
@@ -369,7 +467,7 @@ html, body {
 
 #lauren .feature-text h1 {
   padding-top: 24%;
-  color: #FFF; }
+  color: #84B8C4; }
   @media (max-width: 480px) {
     #lauren .feature-text h1 {
       padding-top: 64%; } }
@@ -377,10 +475,21 @@ html, body {
 #lauren .feature-text h2 {
   color: #000; }
 
+#lauren .open-trigger {
+  color: #000; }
+
+#lauren .side-drawer {
+  background-color: #84B8C4; }
+  #lauren .side-drawer .open-trigger {
+    color: #FFF; }
+
 #lauren .icon {
   color: #000; }
   #lauren .icon:hover {
-    color: #FFF; }
+    color: #84B8C4; }
+
+#lauren .icon-cancel:before {
+  top: 12px; }
 
 #lauren.spence {
   background-color: #2e416a; }

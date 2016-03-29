@@ -2,7 +2,7 @@
 .feature-text {
 	h1 {
 		padding-top: 24%;
-		color: #FFF;
+		color: $the-accent;
 
 		@include breakpoint(s-mobile) {
 			padding-top: 64%;
@@ -14,11 +14,29 @@
 	}
 }
 
+.open-trigger {
+	color: #000;
+}
+
+.side-drawer {
+	background-color: $the-accent;
+
+	.open-trigger {
+		color: #FFF;
+	}
+}
+
 .icon {
 	color: #000;
 
 	&:hover {
-		color: #FFF;
+		color: $the-accent;
+	}
+}
+
+.icon-cancel{
+	&:before {
+		top: 12px;
 	}
 }
 

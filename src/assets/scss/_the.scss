@@ -29,7 +29,7 @@
 }
 
 .side-drawer {
-	background-color: #84B8C4;
+	background-color: $the-accent;
 }
 
 .photo-cred {
@@ -38,7 +38,7 @@
 	bottom: 40px;
 	margin: 0;
 	font-size: 13px;
-	color: #84B8C4;
+	color: $the-accent;
 
 	&:hover {
 		color: #FFF;

@@ -27,6 +27,11 @@
 	width: 9%;
 	margin-top: 20px;
 
+	@include breakpoint(mobile) {
+		width: 18%;
+		margin-top: 60px;
+	}
+
 	@include breakpoint(s-mobile) {
 		width: 38%;
 	}

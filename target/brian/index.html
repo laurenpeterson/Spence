@@ -4,17 +4,18 @@
 	<meta charset="UTF-8">
 	<title>Brian Spence | Computer Engineer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-	<base href="http://spenc.es">
+	<!-- <base href="http://spenc.es"> -->
 	<link rel="stylesheet" href="/assets/css/main.css" type="text/css">
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div id="brian" class="spence">
 	<div class="full-img">
-	<a class="open-trigger" href="#">About</a>
+	<a class="open-trigger drawer-link" href="#" data-drawer-type="about">About</a>
+	<a class="resume-trigger drawer-link" href="#" data-drawer-type="resume">Resume</a>
 		<div class="feature-text">
 			<h1>brian spence</h1>
 			<h2>Computer Engineer</h2>
@@ -25,9 +26,83 @@
 			<a class="icon icon-linkedin" href="https://www.linkedin.com/in/brianmspence" target="_blank"></a>
 		</footer>
 	</div>
-	<div class="side-drawer">
+	<div class="side-drawer about-drawer">
 		<h2>about me</h2>
 		<p>I'm Brian Spence and I'm a computer engineer. Contrary to popular beleif, I've never been to space, though I would love to. Why do people keep asking that? Three years ago, I graduated from Cal Poly San Luis Obispo with a degree in Computer Engineering. Since then, I've been writing software for a local U.S. Military contractor and have learned and grown a lot. When I'm not coding at work or doing side coding projects at home, I rock climb with my wife Lauren, walk with my dog Otto, and do everything else while being solicited for attention by my loud cat Samwise.</p>
+	</div>
+	<div class="resume-panel resume-drawer">
+		<div class="resume-container">
+		<div class="res-heading-section">
+			<h2 class="res-name">brian spence</h2>
+			<h2>Computer Engineer</h2>
+			<p>1775 Johnson Ave. San Luis Obispo, CA 93401</p>
+			<p>brianmspence@gmail.com</p>
+			<p>(951) 746-4904</p>
+		</div>
+			
+			<div class="res-section">
+				<h4 class="res-section-heading">Education</h4>
+				<div class="res-section-body">
+					<h3>California Polytechnic State University, San Luis Obispo</h3>
+						<p><span>Bachelor of Science:</span> Computer Engineering</p>
+						<p><span>Cumulative Cal Poly GPA:</span> 3.0</p>
+						<p><span>Date of graduation:</span> June 2013</p>
+					
+				</div>
+			</div>
+			
+			<div class="res-section">
+				<h4 class="res-section-heading">Professional and Academic Experience</h4>
+				<div class="res-section-body">
+					<h3>Tapestry Solutions, a Boeing Company</h3>
+					<p><span>Software Engineer, May 2012 - present</span>  Developed and maintained the ICODES logistical software used by the U.S. military. Worked as part of a team of developers, gaining experience developing an enterprise application using Java and ActionScript. As a part the small flash viewer task team, maintained a productive and consistent pace through self motivation.</p>
+					<h3>Immersive Virtual Reality System Senior Project</h3>
+					<p><span>Fall 2012 - Spring 2012</span>  Created a virtual reality system that allows a user to explore virtual worlds by physically walking around an area. Tracking is accomplished through the use of GPS and dead reckoning. The system employs the Unreal development kit, a popular video game engineer. Designed to integrate with the Oculus Rift headset to create a truly immersive virtual reality</p>
+					<h3>Rmax++ Project, Computer Vision Team</h3>
+					<p><span>Fall 2011 – Spring 2012</span>  Designed and integrated an autonomous multi-vehicle system using a quarter-scale helicopter, ground vehicle, and command station in a large multi-location interdisciplinary team project sponsored by Northrop Grumman. Developed computer vision algorithms and integrated them with the hardware of the helicopter in order tolocate targets and relay their GPS location.</p>
+					<h3>PrOXi Android App</h3>
+					<p><span>Team Leader, Wireless Communication Leader, Winter 2012</span>  Created a smart contact-swapping app for the Android platform in a team-based project for grad-level Artificial Intelligence II. Used Bluetooth, databases, and intelligent AI algorithms to determine if users should have each other’s contact information based on their interactions and contact list. View the website <a href="https://wiki.csc.calpoly.edu/CSC-580-W12-02">here</a>.</p>
+				</div>
+			</div>
+
+			<div class="res-section">
+				<h4 class="res-section-heading">Technical Skills</h4>
+				<div class="res-section-body">
+					<div class="resume-column-thirds">
+						<p>C, C++, Java</p>
+						<p>Artificial Intelligence</p>
+						<p>Computer Security</p>
+						<p>Computer Vision</p>
+					</div>
+					<div class="resume-column-thirds">
+						<p>Computer Networks</p>
+						<p>Operating Systems</p>
+						<p>Flex &amp; ActionScript 3</p>
+						<p>Eclipse &amp; Visual Studio</p>
+					</div>
+					<div class="resume-column-thirds">
+						<p>Microsoft Office Suite</p>
+						<p>Github</p>
+						<p>HTML</p>
+						<p>CSS</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="res-section">
+				<h4 class="res-section-heading">Leadership</h4>
+				<div class="res-section-body">
+					<h3>Cal Poly Week of Welcome</h3>
+					<p><span>Orientation (WOW) Leader, Spring - Fall 2012</span>  Completed quarter-long leadership training. Worked in a two-person team to introduce incoming Freshman to Cal Poly by planning a week’s worth of activities designed to welcome and build a foundation for students coming into a new environment.</p>
+					<h3>Electric Vehicle Engineering Club</h3>
+					<p><span>Club President, Treasurer, Secretary, Winter 2010 - Spring 2012</span>  Designed and fabricated a Rapid Battery Interchange System for full-size electric van. The system automatically swaps out the battery pack of the van with a fresh one in less than five minutes. Maintain and drive the club’s award-winning electric Rx-7 racecar at community events. Managed club projects and finances.</p>
+					<h3>FRG Computer Gaming Club</h3>
+					<p><span>Founder, Spring 2009 - Fall 2011</span>  Planned and organized large quarterly computer-gaming events. Setup computer networks, worked with industry to acquire donations of games.</p>
+					
+				</div>
+			</div>
+	        
+		</div>
 	</div>
 </div>
 <script type="text/javascript" src="/assets/js/main.js"></script>
