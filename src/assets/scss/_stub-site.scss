@@ -58,7 +58,7 @@ footer {
 	margin-right: 10px;
 }
 
-.drawer-link {
+.section-link {
 	font-family: $font-sans;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -99,7 +99,7 @@ footer {
 	}
 }
 
-.side-drawer {
+.drawer-right {
 	width: 400px;
 	background-color: $the-accent;
 	height: 100%;
@@ -139,12 +139,11 @@ footer {
 		@include breakpoint(s-mobile) {
 			display: block;
 		}
-	}
-}
 
-.active-drawer {
-	z-index: 1;
-	display: block;
+		&:before {
+			top: 15px;
+		}
+	}
 }
 
 .site-buttons {

@@ -35,8 +35,13 @@
 	@include breakpoint(s-mobile) {
 		width: 38%;
 	}
+
+	@media (max-width: 767px) and (orientation:landscape) {
+	    display: none;
+	}
 }
 
-.side-drawer {
+.drawer-right {
 	background-color: #7998B5;
 }
+

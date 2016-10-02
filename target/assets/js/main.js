@@ -10312,33 +10312,49 @@ return jQuery;
 
   $(function () {
       // document is ready
-    var $drawerTrigger = $('.drawer-link'),
+    var $drawerTrigger = $('.open-trigger'),
     		$fullImg = $('.full-img'),
     		$textToggle = $('.slide-trigger'),
         $resTrigger = $('.resume-trigger'),
-        $resSection = $('.resume-panel');
+        $resDrawerTrigger = $('.resume-drawer-trigger'),
+        $resSection = $('.resume-panel'),
+        $rightDrawer = $('.drawer-right');
 
 
     $drawerTrigger.click(function(e){
     	e.preventDefault();
-      var drawerType = $(this).data('drawer-type');
-      var $currentDrawer = $('.' + drawerType + '-drawer');
-    	var drawerWidth = $currentDrawer.outerWidth();
-    	if (!$(this).hasClass('icon-cancel') && drawerType == "about") {
+    	var drawerWidth = $rightDrawer.outerWidth();
+    	if (!$(this).hasClass('icon-cancel')) {
     		$fullImg.css('left', - drawerWidth);
-        $currentDrawer.addClass('active-drawer');
-    		$(this).addClass('icon-cancel');
-    	} else if (!$(this).hasClass('icon-cancel') && drawerType == "resume"){
-        $fullImg.css('left', drawerWidth);
-        $currentDrawer.addClass('active-drawer');
-        $(this).addClass('icon-cancel');
-      } else {
+    		$drawerTrigger.addClass('icon-cancel');
+    	} else {
     		$fullImg.css('left', '0');
-        setTimeout( function() {
-          $currentDrawer.removeClass('active-drawer');
-        }, 300);
-    		$(this).removeClass('icon-cancel');
+    		$drawerTrigger.removeClass('icon-cancel');
     	}
+    });
+
+    $resDrawerTrigger.click(function(e){
+      e.preventDefault();
+      $resDrawerTrigger.addClass('lower-panel-show');
+      $('html, body').animate({
+          scrollTop: $resDrawerTrigger.offset().top
+      }, 1000);
+    });
+
+    // smooth scroll from CSS Tricks
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
     });
 
     $textToggle.click(function(){

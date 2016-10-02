@@ -1,29 +1,54 @@
 .resume-panel {
-	width: 90%;
+	width: 100%;
 	background-color: #CCC;
 	display: none;
 	position: absolute;
 	left: 0;
-	top: 0;
-	padding: 50px 0;
+	top: 100%;
+	padding: 0 0 50px;
+
+	@include breakpoint(tablet) {
+		padding: 0;
+	}
+
+	&.lower-panel-show {
+		display: block;
+	}
 }
 
 .resume-container {
 	width: 100%;
 	max-width: 1180px;
 	background-color: #FFF;
-	margin: 0 auto;
+	margin: 50px auto 0;
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
 	padding: 100px 100px;
+	position: relative;
 	@include clearfix;
+
+	@include breakpoint(tablet) {
+		padding: 40px 4%;
+		margin: 0 auto;
+	}
+
+	@include breakpoint(s-mobile) {
+		padding: 40px 6%;
+	}
 
 	p {
 		margin: 0;
 		line-height: 1.6em;
 		font-size: em(15);
+		color: #000;
 
 		span {
 			font-weight: 700;
+		}
+	}
+
+	.res-body {
+		@include breakpoint(s-mobile) {
+			margin-bottom: 10px;
 		}
 	}
 
@@ -38,6 +63,56 @@
 		margin-top: 10px;
 		font-size: em(18);
 		line-height: 1.6em;
+		color: $resume-subead;
+
+		@include breakpoint(s-mobile) {
+			margin-bottom: 2px;
+		}
+	}
+
+	.icon {
+		color: $resume-subead;
+		width: 100px;
+		position: absolute;
+		top: 50px; 
+		right: 50px;
+		text-align: center;
+
+		@include breakpoint(mobile) {
+			margin: 0 auto 50px;
+	    display: block;
+	    position: relative;
+	    top: auto;
+	    right: auto;
+	    border-bottom: 2px solid $resume-subead;
+	    border-top: 2px solid $resume-subead;
+	    width: 90%;
+	    padding: 0.5em 0 2em;
+		}
+
+		@include breakpoint(s-mobile) {
+			margin: 0 auto 40px;
+		}
+
+		p {
+			font-size: 14px;
+			color: $resume-subead;
+			line-height: 2em;
+		}
+	}
+}
+
+.res-masthead {
+	@include breakpoint(s-mobile) {
+		text-align: center;
+
+		p {
+			font-size: 13px;
+		}
+
+		.res-section-heading {
+			text-align: center;
+		}
 	}
 }
 
@@ -50,19 +125,13 @@
 		font-size: em(14);
 		line-height: 1.4em;
 	}
-
-	h2 {
-		font-size: 1.5em;
-	}
-
-	.res-name {
-		font-family: "Heartwell", "Lato", sans-serif;
-		text-transform: none;
-		font-size: 3em;
-	}
 }
 
-
+.res-name {
+	color: $resume-section-head;
+	letter-spacing: 3px;
+	font-size: 1.5em;
+}
 
 .resume-column {
 	float: left;
@@ -80,6 +149,10 @@
 	@include clearfix;
 	display: flex;
 	align-items: stretch;
+
+	@include breakpoint(s-mobile) {
+		flex-direction: column;
+	}
 }
 
 .res-section-heading {
@@ -90,11 +163,23 @@
 	font-size: 1em;
 	line-height: 1.6em;
 	text-align: right;
+	color: $resume-section-head;
+
+	@include breakpoint(s-mobile) {
+		width: 100%;
+		text-align: left;
+		margin-bottom: 1px;
+	}
 }
 
 .res-section-body {
 	width: 80%;
 	margin-left: 20px;
+
+	@include breakpoint(s-mobile) {
+		margin-left: 0;
+		width: 100%;
+	}
 
 	h3:first-of-type {
 		margin-top: 0;

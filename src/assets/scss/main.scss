@@ -19,6 +19,7 @@
 
 html, body {
 	height: 100%;
+	background-color: $the-accent;
 }
 
 #brian {
@@ -27,9 +28,6 @@ html, body {
 
 #lauren {
 	@import 'lauren';
-	&.spence {
-		background-color: #2e416a;
-	}
 }
 
 #the {
