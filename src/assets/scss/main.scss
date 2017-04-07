@@ -1,14 +1,13 @@
 @import 'reset';
-@import 'social-icon';
-@import 'fonts';
-@import 'variables';
+@import 'helpers/social-icon';
+@import 'helpers/fonts';
+@import 'helpers/variables';
 @import 'typography';
-@import 'mixins';
+@import 'helpers/mixins';
 
 .spence {
 	@import 'resume';
 	@import 'stub-site';
-
 
 	margin: 0 auto;
 	font-family: $font-sans;

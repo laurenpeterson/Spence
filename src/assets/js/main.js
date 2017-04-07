@@ -8,7 +8,6 @@
     		$fullImg = $('.full-img'),
     		$textToggle = $('.slide-trigger'),
         $resTrigger = $('.resume-trigger'),
-        $resDrawerTrigger = $('.resume-drawer-trigger'),
         $resSection = $('.resume-panel'),
         $rightDrawer = $('.drawer-right');
 
@@ -25,11 +24,11 @@
     	}
     });
 
-    $resDrawerTrigger.click(function(e){
+    $resTrigger.click(function(e){
       e.preventDefault();
-      $resDrawerTrigger.addClass('lower-panel-show');
+      $resSection.addClass('lower-panel-show');
       $('html, body').animate({
-          scrollTop: $resDrawerTrigger.offset().top
+          scrollTop: $resSection.offset().top
       }, 1000);
     });
 

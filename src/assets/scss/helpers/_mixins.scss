@@ -1,0 +1,53 @@
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 1160px) { @content; }
+  } @else if $point == s-desktop {
+    @media (max-width: 1159px)  { @content; }
+  } @else if $point == tablet {
+    @media (max-width: 979px)  { @content; }
+  } @else if $point == mobile {
+    @media (max-width: 767px)  { @content; }
+  } @else if $point == s-mobile {
+    @media (max-width: 480px)  { @content; }
+  } @else {
+    @media (max-width: #{$point})  { @content; }
+  }
+}
+
+
+@mixin clearfix() {
+  &:after {
+  	clear: both;
+  	content: "";
+  	display: table;
+  }
+}
+
+@function em($pixels) {
+  @return #{$pixels/16}em
+}
+
+@function rem($pixels) {
+  @return #{$pixels/16}rem
+}
+
+
+@mixin panel-size($width, $height) {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+
+  &:after {
+    padding-top: $height / $width * 100%;
+    content: '';
+    display: block;
+  }
+}
+
+.panel-inner-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

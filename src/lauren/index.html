@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Lauren Spence | Web Developer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-	<base href="http://spenc.es">
+	<!-- <base href="http://spenc.es"> -->
 	<link rel="stylesheet" href="../assets/css/main.css" type="text/css">
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -14,26 +14,71 @@
 <body>
 <div id="lauren" class="spence">
 	<div class="full-img">
-		
+		<ul class="anchor-nav">
+			<li class="section-link"><a href="#about">About</a></li>
+			<li class="section-link"><a class="resume-trigger" href="#resume-panel">Resume</a></li>
+		</ul>
 		<div class="feature-text">
 			<h1>lauren spence</h1>
 			<h2>Web Developer</h2>
 		</div>
 	</div>
-	<div class="about">
-		<h2>about me</h2>
-		<p>I'm Lauren Spence and I'm a front-end web developer. Two and half years ago, I graduated from Cal Poly San Luis Obispo with a degree in Graphic Communication and a minor in English. Since then I've worked at a local Marketing Agency as a front-end developer. "Agency Life" means my work has been project-based, and the type of projects I've gotten to work on span the gamut. I've contributed to cutting-edge javascript apps and sites, and I've made my copy/paste fingers sore entering content for the agency's custom-built app. I've worked with myriad content management systems, including AEM, Wordpress, and Expression Engine, as well as built many a page from scratch, using CSS pre-processors, tempating languages, and build tools. </p>
-		<p>In my time spent not developing tiny websites sites, I chill with my husband, wrestle my dog into not making me pet him while using my hands for other tasks, make intermittent stabs at exercise, and take up a new craft every few weeks. I live in San Luis Obispo California, which is the prettiest darn city this side of anywhere. </p>
-
-	</div>
+	<section class="about" id="about">
+		<div class="content-wrap">
+			<img class="about-img" src="../assets/images/l-about-2.jpg" alt="">
+			<img class="about-img" src="../assets/images/l-about-3.jpg" alt="">
+			
+			<div class="about-text">
+				<h2>About</h2>
+				<p class="about-intro">I'm Lauren Spence and I'm a front-end web developer.</p>
+				<p>Long(ish) ago, I graduated from Cal Poly San Luis Obispo with a degree in Graphic Communication and a minor in English. Since then I've worked at a local Marketing Agency as a front-end developer. "Agency Life" means my work has been project-based, and the type of projects I've gotten to work on span the gamut. I've contributed to cutting-edge javascript apps and sites, and I've made my copy/paste fingers sore entering content for the agency's custom-built app. I've worked with myriad content management systems, including AEM, Wordpress, and Expression Engine, as well as built many a page from scratch, using CSS pre-processors, tempating languages, and build tools. </p>
+				<!-- <p>In my time spent not developing tiny websites sites, I chill with my husband, wrestle my dog into not making me pet him while using my hands for other tasks, make intermittent stabs at exercise, and take up a new craft every few weeks. I live in San Luis Obispo California, which is the prettiest darn city this side of anywhere. </p> -->
+			</div>
+		</div>
+	</section>
+	<section class="bg-panel">
+		<div class="floating-window">
+			<div class="panel-inner-wrap">
+				<div class="browser-pane">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<nav class="top-nav">
+					<a class="floating-logo">lauren spence</a>
+					<a class="floating-link">Home</a>
+					<a class="floating-link">About</a>
+					<a class="floating-link">Shop</a>
+					<a class="floating-link">Blog</a>
+					<a class="floating-link">Contact</a>
+				</nav>
+				<div class="floating-text">
+					<h2>let's work together</h2>
+					<p class="about-intro">Together we're so much better.</p>
+					<p>Lorem ipsum dolor sit amet, eum vero recusabo ad, ea vix alii pertinacia. Eos id scriptorem consequuntur, at duis novum nusquam vis. Choro deseruisse complectitur vel ex. Aperiri inciderint an nec, omnis viderer scribentur no vim. Pri te democritum definitionem. No liber tation aperiri vis, justo reprimique sea cu. Appetere apeirian eos ea, id porro dignissim ius.</p>
+				</div>
+			</div>
+			
+		</div>
+	</section>
 	<footer>
-			<a class="icon icon-instagram" href="https://www.instagram.com/ingridly/" target="_blank"></a>
-			<a class="icon icon-linkedin" href="https://www.linkedin.com/in/laurenpetersonspence" target="_blank"></a>
-			<a class="icon icon-doc-text-inv resume-drawer-trigger" href="#"></a>
+		<div class="center-badge"><span class="icon icon-gauge"></span></div>
+		<div class="content-wrap">
+			<div class="social-wrap">
+				<a class="icon icon-linkedin" href="https://www.linkedin.com/in/laurenpetersonspence" target="_blank"></a>
+				<a class="icon icon-github-circled-alt2" href="https://github.com/laurenpeterson" target="_blank"></a>
+				<a class="icon icon-stackoverflow" href="https://stackoverflow.com/users/4504641/ingridly?tab=profile" target="_blank"></a>
+				<a class="icon icon-instagram" href="https://www.instagram.com/ingridly/" target="_blank"></a>
+			</div>
+			
+			<a class="res-buton resume-trigger" href="#resume"><span class="icon-doc-text-inv" href="#"></span> Résumé</a>
+			<p>&copy; Copyright Lauren Spence 2017</p>
+		</div>
+			
 	</footer>
-	<div class="resume-panel">
+	<div class="resume-panel" id="resume-panel">
 		<div class="resume-container">
-		<a class="icon icon-doc-text" href="http://spenc.es/assets/downloads/Lauren_Spence_Resume.pdf" target="_blank"><p>Download PDF</p></a>	
+		<a class="icon icon-doc-text" href="../assets/downloads/Lauren_Spence_Resume.pdf" target="_blank"><p>Download PDF</p></a>	
 			<h2>Lauren Spence</h2>
 			
 			<div class="res-section">
@@ -55,35 +100,14 @@
 			<div class="res-section">
 				<h4 class="res-section-heading">Work Experience</h4>
 				<div class="res-section-body">
-					<h3>Rosetta Marketing Agency</h3>
-					<p><span>Senior Creative Engineer, January 2016 – present</span>  Worked independently and as a part of a team to execute projects and maintain large-scale commercial websites, working with content management systems such as AEM, Wordpress, and Expression Engine as well as complex Javascript, HTML, and Sass based websites. </p>
-					<p><span>Associate Creative Engineer, July 2013 – January 2016</span>  Developed web pages, websites, banner ads, HTML emails and more in a fast-paced project based environment with quick deadlines and full responsibility for an entire project from development to launching live. Taught myself skills and learned from the best as I developed from an associate developer to a senior one.</p>
+					<h3>Sapient Razorfish <span class="sidenote">(formerly Rosetta)</span></h3>
+					<p><span>Senior Front-End Developer, January 2016 – present</span>  Worked independently and as a part of a team to execute projects and maintain large-scale commercial websites, working with content management systems such as AEM, Wordpress, and Expression Engine as well as complex Javascript, HTML, and Sass based websites. </p>
+					<p><span>Associate Front-End Developer, July 2013 – January 2016</span>  Developed web pages, websites, banner ads, HTML emails and more in a fast-paced project based environment with quick deadlines and full responsibility for an entire project from development to launching live. Taught myself skills and learned from the best as I developed from an associate developer to a senior one.</p>
 					<h3>Graphic Communication Institute at Cal Poly</h3>
 					<p><span>Student Assistant, Spring 2011 – present</span>  Executed design, web design, research, and administrative work, collaborating with Professors and Industry Professionals to finalize a wide variety of projects.</p>
 					<h3>University Graphic Systems</h3>
 					<p><span>Head Pressman, September 2011- June 2012</span>  Directed employees and interns, working alongside them and delegating tasks in order to produce Cal Poly’s award winning Mustang Daily Newspaper as the leader of a team.</p>
 					<p><span>Web Production Intern &amp; Employee, January 2011 – September 2011</span>  Trained to become a leader as I learned the skills to run a web offset press and how to work under pressure.</p>
-				</div>
-			</div>
-
-			<div class="res-section">
-				<h4 class="res-section-heading">Academic Experience</h4>
-				<div class="res-section-body">
-					<h3>English Minor</h3>
-					<p>Authored countless examples of persuasive and expository writing, making me a strong and adept communicator capable of creativity on a time-budget.</p>
-					<h3>President of Shakespeare Press Museum Club</h3>  
-					<p>Organized and lead club meetings, arranged and executed training for future curators, gave historical tours, and taught how to print Letterpress. </p>
-					<h3>Orientation (WOW) Leader</h3>  
-					<p>Guided a group of 10 incoming students in Cal Poly’s Week of Welcome program. In close cooperation with my co-leader, organized and executed a detailed plan for every hour of the day and strove to make our students’ transition to college smooth.</p>
-				</div>
-			</div>
-
-			<div class="res-section">
-				<h4 class="res-section-heading">Awards &amp; Honors</h4>
-				<div class="res-section-body">
-					<p><span>President’s List:</span> 2008–2009, 2009–2010 Academic School Years</p>
-					<p><span>Dean’s List:</span> Winter 2011, Spring 2011, Fall 2011, Winter 2012</p>
-					<p><span>Mario Pedrozzi Scholarship:</span> Awarded 2008, applicable 2008-2012</p>
 				</div>
 			</div>
 
@@ -111,9 +135,32 @@
 				</div>
 			</div>
 
+			<div class="res-section">
+				<h4 class="res-section-heading">Academic Experience</h4>
+				<div class="res-section-body">
+					<h3>English Minor</h3>
+					<p>Authored countless examples of persuasive and expository writing, making me a strong and adept communicator capable of creativity on a time-budget.</p>
+					<h3>President of Shakespeare Press Museum Club</h3>  
+					<p>Organized and lead club meetings, arranged and executed training for future curators, gave historical tours, and taught how to print Letterpress. </p>
+					<h3>Orientation (WOW) Leader</h3>  
+					<p>Guided a group of 10 incoming students in Cal Poly’s Week of Welcome program. In close cooperation with my co-leader, organized and executed a detailed plan for every hour of the day and strove to make our students’ transition to college smooth.</p>
+				</div>
+			</div>
+
+			<div class="res-section">
+				<h4 class="res-section-heading">Awards &amp; Honors</h4>
+				<div class="res-section-body">
+					<p><span>President’s List:</span> 2008–2009, 2009–2010 Academic School Years</p>
+					<p><span>Dean’s List:</span> Winter 2011, Spring 2011, Fall 2011, Winter 2012</p>
+					<p><span>Mario Pedrozzi Scholarship:</span> Awarded 2008, applicable 2008-2012</p>
+				</div>
+			</div>
+
+			
+
 		</div>
 	</div>
 </div>
-<script type="text/javascript" src="/assets/js/main.js"></script>
+<script type="text/javascript" src="../assets/js/main.js"></script>
 </body>
 </html>

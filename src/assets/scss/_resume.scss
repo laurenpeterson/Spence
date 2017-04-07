@@ -63,7 +63,7 @@
 		margin-top: 10px;
 		font-size: em(18);
 		line-height: 1.6em;
-		color: $resume-subead;
+		color: $resume-section-head;
 
 		@include breakpoint(s-mobile) {
 			margin-bottom: 2px;
@@ -163,13 +163,19 @@
 	font-size: 1em;
 	line-height: 1.6em;
 	text-align: right;
-	color: $resume-section-head;
+	color: $resume-subead;
 
 	@include breakpoint(s-mobile) {
 		width: 100%;
 		text-align: left;
 		margin-bottom: 1px;
 	}
+}
+
+.sidenote {
+	font-size: rem(14);
+	font-weight: normal;
+	font-style: italic;
 }
 
 .res-section-body {
