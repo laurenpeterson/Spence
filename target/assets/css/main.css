@@ -677,26 +677,30 @@ html, body {
   width: 100%;
   background-image: url("../images/ocean-bg.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-repeat: no-repeat; }
   #lauren .bg-panel:after {
     padding-top: 75%;
     content: '';
     display: block; }
 
+#lauren .cloudy {
+  position: absolute;
+  right: 0;
+  z-index: 1; }
+
 #lauren .floating-window {
   position: relative;
   display: inline-block;
   width: 100%;
+  display: block;
   width: 80%;
-  left: 10%;
-  top: 10%;
-  position: absolute;
+  margin: 20% auto 0;
+  max-width: 1240px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 6px;
   border: 3px solid rgba(255, 255, 255, 0.8); }
   #lauren .floating-window:after {
-    padding-top: 60%;
+    padding-top: 75%;
     content: '';
     display: block; }
   #lauren .floating-window .browser-pane {
@@ -732,9 +736,9 @@ html, body {
     padding: 20px 0 24px 20px;
     font-size: 1.5rem; }
   #lauren .floating-window .floating-text {
-    background-color: rgba(255, 255, 255, 0.6);
-    width: 60%;
-    margin: 8% auto;
+    width: 50%;
+    float: right;
+    margin: 8%;
     padding: 6%;
     color: #ddd; }
     #lauren .floating-window .floating-text h2 {

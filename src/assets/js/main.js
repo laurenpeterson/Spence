@@ -48,23 +48,33 @@
       });
     });
 
-    $textToggle.click(function(){
-    	$(this).toggleClass('trigger-on').next('p').slideToggle();
-      // var fullImgHeight = $fullImg.outerHeight();
-      // setTimeout( function() {
-      //   var drawerHeight = $drawer.outerHeight();
-      //   if (drawerHeight > fullImgHeight) {
-      //     $fullImg.css('height', drawerHeight);
-      //   } else {
-      //     $fullImg.css('height', '100%');
-      //   }
+    // Mobile Detection test
 
-      // }, 400);
-    });
+    var isMobile = false;
+ 
+    if (!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+      //on desktop
+    } else {
+      //on mobile
+      isMobile = true;
+    }
 
+    // initialize skrollr if the window width is large enough
+    var initSkrollr = function() {
+      if (!isMobile && $(window).width() > 767) {
+        setTimeout(function() {
+          skrollr.init({
+            forceHeight: false,
+            smoothScrolling: false,
+            mobileDeceleration: 0.004
+          }); 
 
+          // skrollr.menu.init(sk);
+        }, 1500);
+      }
+    }
 
-
+    initSkrollr();
   });
 
 })(window, document, jQuery);
