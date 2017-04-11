@@ -1,6 +1,9 @@
+$kath-accent: #5FDADB;
+
 // background image
 .full-img {
-	background-image: url('../images/forest.jpg');
+	background-image: url('../images/night-bg.jpg');
+	// background-image: url('../images/forest.jpg');
 	text-align: center;
 }
 
@@ -12,17 +15,12 @@
 	padding: 50px;
 	
 	h1 {
-		// color: #C4C4C4;
-		color: #FCC921;
+		color: $kath-accent;
 		font-size: 5em;
 	}
 
 	h2 {
 		color: #FFF;
-
-		// @include breakpoint(s-mobile) {
-		// 	color: #FFF;
-		// }
 	}
 }
 
@@ -49,12 +47,12 @@
 	text-shadow: 2px 2px #444;
 
 	&:hover {
-		color: #FCC921;
+		color: $kath-accent;
 	}
 }
 
 .drawer-right {
-	background-color: #FCC921;
+	background-color: #4DB2AE;
 	color: #444;
 
 	.open-trigger {
