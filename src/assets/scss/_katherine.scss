@@ -1,0 +1,76 @@
+// background image
+.full-img {
+	background-image: url('../images/forest.jpg');
+	text-align: center;
+}
+
+//tile text colors n such
+.feature-text {
+	margin-top: 12%;
+	display: inline-block;
+	text-align: center;
+	padding: 50px;
+	
+	h1 {
+		// color: #C4C4C4;
+		color: #FCC921;
+		font-size: 5em;
+	}
+
+	h2 {
+		color: #FFF;
+
+		// @include breakpoint(s-mobile) {
+		// 	color: #FFF;
+		// }
+	}
+}
+
+//the "about" link that opens the drawer
+.open-trigger {
+	color: #FFF;
+	font-weight: 700;
+	padding: 50px;
+	text-transform: uppercase;
+
+	&:before {
+		top: 41px;
+	}
+
+	@include breakpoint(s-mobile) {
+		color: #FFF;
+		padding: 10px 20px 10px;
+	}
+}
+
+//social icons
+.icon {
+	color: #FFF;
+	text-shadow: 2px 2px #444;
+
+	&:hover {
+		color: #FCC921;
+	}
+}
+
+.drawer-right {
+	background-color: #FCC921;
+	color: #444;
+
+	.open-trigger {
+		display: none;
+
+		@include breakpoint(s-mobile) {
+			display: block;
+		}
+	}
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 80px;
+}
+
