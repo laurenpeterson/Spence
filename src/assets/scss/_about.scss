@@ -1,34 +1,19 @@
-.about {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 15px;
-	@include clearfix;
-}
-
-.about-row {
-	@include clearfix;
-	padding-bottom: 15px;
-}
-
-.about-img {
-	width: 50%;
-	float: left;
-}
-
-.about-text {
-	width: 50%;
-	float: left;
+.ls-about {
+	background-color: #FFF;
+	padding: 100px 20px;
 	position: relative;
-}
+	text-align: center;
+	
 
-.img-left {
-	.about-img {
-		padding-right: 15px;
+	.text-wrap {
+		max-width: 600px;
+		margin: 0 auto;
 	}
 }
 
-.img-right {
-	.about-text {
-		padding-right: 15px;
-	}
+.about-intro {
+	text-transform: uppercase;
+	font-size: rem(16);
+	margin-bottom: 5px;
+	letter-spacing: 1px;
 }

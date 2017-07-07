@@ -5,6 +5,8 @@
 
 .feature-text {
 	padding-top: 12%;
+	text-align: center;
+
 	h1 {
 		color: $the-accent;
 
@@ -14,7 +16,7 @@
 	}
 
 	h2 {
-		color: #000;
+		color: $dark-text;
 	}
 }
 
@@ -33,48 +35,33 @@
 	position: relative;
 }
 
-.about {
-	padding: 100px 20px;
-	color: $white;
+.title-list {
 	position: relative;
-	// background-color: #000;
+	margin: 0 auto;	
+	// display: inline-block;
 
-	h2 {
-		// font-family: Georgia, serif;
-		font-family: 'Heartwell', $font-sans;
-		font-size: rem(50);
-		font-style: italic;
-		text-transform: none;
-		font-weight: normal;
-		letter-spacing: 0px;
-		margin-bottom: 15px;
+	li {
+		display: inline-block;
+		opacity: 0;
+		transition: opacity 0.5s ease-out, left 0.5s ease-out, top 0.5s ease-out;
+		position: absolute;
+		left: 60%;
+		transform: translateX(-50%);
+		top: 4px;
+
+		&.title-active {
+			opacity: 1;
+			left: 50%;
+			top: 0;
+		}
+
+		&.title-deactivated {
+			left: 30%;
+			top: 4px;
+		}
 	}
 }
 
-.about-img {
-	float: left;
-	width: 30%;
-	margin-right: 3%;
-}
-
-.about-intro {
-	text-transform: uppercase;
-	font-size: rem(14);
-	margin-bottom: 5px;
-}
-
-.about-text {
-	position: absolute;
-	// left: 58%;
-	right: 0;
-	top: 50%;
-	transform: translateY(-50%);
-	background: #FFF;
-	color: #000;
-	padding: 70px;
-	width: 45%;
-	box-shadow: -2px 3px 4px 0px rgba(0,0,0,0.25);
-}
 
 .bg-panel {
 	@include panel-size(4px, 3px)
@@ -99,6 +86,7 @@
 	background-color: rgba(255, 255, 255, 0.5);
 	border-radius: 6px;
 	border: 3px solid rgba(255, 255, 255, 0.8);
+	box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.32);
 
 	.browser-pane {
 		background-color: #FFF;
@@ -124,7 +112,7 @@
 	.floating-link {
 		padding: 25px 20px;
 		display: inline-block;
-		color: #ddd;
+		color: #ccc;
 		text-transform: uppercase;
 		font-size: rem(13);
 		letter-spacing: 1px;
@@ -133,7 +121,7 @@
 	.floating-logo {
 		font-family: 'Heartwell', $font-sans;
 		text-transform: none;
-		color: #ddd;
+		color: #ccc;
 		float: left;
 		padding: 20px 0 24px 20px;
 		font-size: rem(24);
@@ -145,7 +133,7 @@
 		float: right;
 		margin: 8%;
 		padding: 6%;
-		color: #ddd;
+		color: #ccc;
 		
 		h2 {
 			// font-family: Georgia, serif;

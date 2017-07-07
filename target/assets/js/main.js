@@ -10317,7 +10317,8 @@ return jQuery;
     		$textToggle = $('.slide-trigger'),
         $resTrigger = $('.resume-trigger'),
         $resSection = $('.resume-panel'),
-        $rightDrawer = $('.drawer-right');
+        $rightDrawer = $('.drawer-right'),
+        $titleList = $('.title-list li');
 
 
     $drawerTrigger.click(function(e){
@@ -10383,6 +10384,30 @@ return jQuery;
     }
 
     initSkrollr();
+
+
+    //Fade in animation
+    var $animEls = $('.ls-animate');
+
+    $(window).scroll(function() {
+      var currentPos = $(this).scrollTop();
+      var center = $(this).outerHeight() / 3;
+
+      $animEls.each(function(i) {
+        if (currentPos >= center) {
+          $(this).addClass('ls-animating');
+        }
+      });
+    });
+
+    $titleList.each(function(i){
+      var $this = $(this);
+      setTimeout(function(){ 
+        $('.title-active').removeClass('title-active').addClass('title-deactivated');
+        $this.addClass('title-active'); 
+      }, (i * 3000))
+    });
+
   });
 
 })(window, document, jQuery);

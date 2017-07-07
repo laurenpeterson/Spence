@@ -47,6 +47,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.panel-inner-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
 @font-face {
   font-family: 'social-icon';
   src: url("../font/social-icon.eot?66354939");
@@ -234,20 +241,22 @@ h2 {
 p {
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  font-size: rem(16);
-  line-height: 160%;
+  font-size: 1rem;
+  line-height: 170%;
   margin-bottom: 10px; }
 
 a {
   color: #444;
   text-decoration: none; }
 
-.panel-inner-wrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0; }
+.script-header {
+  font-family: "Heartwell", "Lato", sans-serif;
+  font-size: 3.125rem;
+  font-style: italic;
+  text-transform: none;
+  font-weight: normal;
+  letter-spacing: 0px;
+  margin-bottom: 15px; }
 
 .spence {
   margin: 0 auto;
@@ -268,11 +277,11 @@ a {
     .spence .resume-panel.lower-panel-show {
       display: block; }
   .spence .resume-container {
+    box-shadow: 0px 0px 0 0px #74afbb,1px 1px 0 0.1px #74afbb,2px 2px 0 0.2px #74afbb,3px 3px 0 0.3px #74afbb,4px 4px 0 0.4px #74afbb,5px 5px 0 0.5px #74afbb,6px 6px 0 0.6px #74afbb,7px 7px 0 0.7px #74afbb,8px 8px 0 0.8px #74afbb,9px 9px 0 0.9px #74afbb,10px 10px 0 1px #74afbb,11px 11px 0 1.1px #74afbb,12px 12px 0 1.2px #74afbb,13px 13px 0 1.3px #74afbb,14px 14px 0 1.4px #74afbb,15px 15px 0 1.5px #74afbb,16px 16px 0 1.6px #74afbb,17px 17px 0 1.7px #74afbb,18px 18px 0 1.8px #74afbb,19px 19px 0 1.9px #74afbb,20px 20px 0 2px #74afbb,21px 21px 0 2.1px #74afbb,22px 22px 0 2.2px #74afbb,23px 23px 0 2.3px #74afbb,24px 24px 0 2.4px #74afbb,25px 25px 0 2.5px #74afbb,26px 26px 0 2.6px #74afbb,27px 27px 0 2.7px #74afbb,28px 28px 0 2.8px #74afbb,29px 29px 0 2.9px #74afbb,30px 30px 0 3px #74afbb,31px 31px 0 3.1px #74afbb,32px 32px 0 3.2px #74afbb,33px 33px 0 3.3px #74afbb,34px 34px 0 3.4px #74afbb,35px 35px 0 3.5px #74afbb,36px 36px 0 3.6px #74afbb,37px 37px 0 3.7px #74afbb,38px 38px 0 3.8px #74afbb,39px 39px 0 3.9px #74afbb,40px 40px 0 4px #74afbb,41px 41px 0 4.1px #74afbb,42px 42px 0 4.2px #74afbb,43px 43px 0 4.3px #74afbb,44px 44px 0 4.4px #74afbb,45px 45px 0 4.5px #74afbb,46px 46px 0 4.6px #74afbb,47px 47px 0 4.7px #74afbb,48px 48px 0 4.8px #74afbb,50px 50px 0 transparent;
     width: 100%;
     max-width: 1180px;
     background-color: #FFF;
     margin: 50px auto 0;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
     padding: 100px 100px;
     position: relative; }
     .spence .resume-container:after {
@@ -552,6 +561,27 @@ a {
     .spence .site-link:hover {
       color: #000;
       text-decoration: underline; }
+  .spence .ls-about {
+    background-color: #FFF;
+    padding: 100px 20px;
+    position: relative;
+    text-align: center; }
+    .spence .ls-about .text-wrap {
+      max-width: 600px;
+      margin: 0 auto; }
+  .spence .about-intro {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    letter-spacing: 1px; }
+  .spence .ls-fade-in {
+    opacity: 0;
+    position: relative;
+    top: 10px;
+    transition: opacity 0.55s ease-out, top 0.55s ease-out; }
+    .spence .ls-fade-in.ls-animating {
+      opacity: 1;
+      top: 0px; }
   .spence:after {
     clear: both;
     content: "";
@@ -613,14 +643,15 @@ html, body {
   background-position: center bottom; }
 
 #lauren .feature-text {
-  padding-top: 12%; }
+  padding-top: 12%;
+  text-align: center; }
   #lauren .feature-text h1 {
     color: #84B8C4; }
     @media (max-width: 480px) {
       #lauren .feature-text h1 {
         padding-top: 64%; } }
   #lauren .feature-text h2 {
-    color: #000; }
+    color: #444; }
 
 #lauren .icon {
   color: #444; }
@@ -636,40 +667,25 @@ html, body {
     content: "";
     display: table; }
 
-#lauren .about {
-  padding: 100px 20px;
-  color: #FFF;
-  position: relative; }
-  #lauren .about h2 {
-    font-family: "Heartwell", "Lato", sans-serif;
-    font-size: 3.125rem;
-    font-style: italic;
-    text-transform: none;
-    font-weight: normal;
-    letter-spacing: 0px;
-    margin-bottom: 15px; }
-
-#lauren .about-img {
-  float: left;
-  width: 30%;
-  margin-right: 3%; }
-
-#lauren .about-intro {
-  text-transform: uppercase;
-  font-size: 0.875rem;
-  margin-bottom: 5px; }
-
-#lauren .about-text {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background: #FFF;
-  color: #000;
-  padding: 70px;
-  width: 45%;
-  box-shadow: -2px 3px 4px 0px rgba(0, 0, 0, 0.25); }
+#lauren .title-list {
+  position: relative;
+  margin: 0 auto; }
+  #lauren .title-list li {
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.5s ease-out, left 0.5s ease-out, top 0.5s ease-out;
+    position: absolute;
+    left: 60%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 4px; }
+    #lauren .title-list li.title-active {
+      opacity: 1;
+      left: 50%;
+      top: 0; }
+    #lauren .title-list li.title-deactivated {
+      left: 30%;
+      top: 4px; }
 
 #lauren .bg-panel {
   position: relative;
@@ -698,7 +714,8 @@ html, body {
   max-width: 1240px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 6px;
-  border: 3px solid rgba(255, 255, 255, 0.8); }
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.32); }
   #lauren .floating-window:after {
     padding-top: 75%;
     content: '';
@@ -724,14 +741,14 @@ html, body {
   #lauren .floating-window .floating-link {
     padding: 25px 20px;
     display: inline-block;
-    color: #ddd;
+    color: #ccc;
     text-transform: uppercase;
     font-size: 0.8125rem;
     letter-spacing: 1px; }
   #lauren .floating-window .floating-logo {
     font-family: "Heartwell", "Lato", sans-serif;
     text-transform: none;
-    color: #ddd;
+    color: #ccc;
     float: left;
     padding: 20px 0 24px 20px;
     font-size: 1.5rem; }
@@ -740,7 +757,7 @@ html, body {
     float: right;
     margin: 8%;
     padding: 6%;
-    color: #ddd; }
+    color: #ccc; }
     #lauren .floating-window .floating-text h2 {
       font-family: "Heartwell", "Lato", sans-serif;
       font-size: 3.125rem;

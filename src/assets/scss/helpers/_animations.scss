@@ -1,0 +1,11 @@
+.ls-fade-in {
+	opacity: 0;
+	position: relative;
+	top: 10px;
+	transition: opacity 0.55s ease-out, top 0.55s ease-out;
+
+	&.ls-animating {
+		opacity: 1;
+		top: 0px;
+	}
+}
