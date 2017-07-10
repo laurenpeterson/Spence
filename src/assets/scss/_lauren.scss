@@ -169,15 +169,16 @@ footer {
 .center-badge {
 	width: 80px;
 	height: 80px;
-	padding: 7px;
+	padding: 13px 9px;
 	border-radius: 50%;
 	border: 5px solid #FFF;
 	background-color: $dark-text;
 	position: absolute;
 	left: 50%;
-	top: -40px;
+	bottom: -40px;
 	transform: translateX(-50%);
 	transition: background-color 0.35s;
+	cursor: pointer;
 
 	.icon {
 		color: #FFF;
@@ -219,6 +220,14 @@ footer {
 	font-size: 19px;
 }
 
+.resume-bar {
+	text-align: center;
+	padding: 50px 20px;
+	color: #FFF;	
+	position: relative;
+	z-index: 1;
+}
+
 .res-buton {
 	border: 2px solid $dark-text;
 	border-radius: 2px;
@@ -243,12 +252,26 @@ footer {
 }
 
 .resume-panel {
+	display: block;
 	position: static;
 	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3) inset;
 	background-color: #a6cfd8;
-	padding: 50px 0;
+	overflow: hidden;
+	padding: 0;
+	// padding: 50px 0 100px;
+	// opacity: 0;
+	max-height: 0px;
+	// visibility: hidden;
+	transition: max-height 1s;
+
+	.resume-container {
+		margin: 80px auto 100px;
+	}
 
 	&.lower-panel-show {
-		display: block;
+		// display: block;
+		// visibility: visible;
+		// opacity: 1;
+		max-height: 5000px;
 	}
 }

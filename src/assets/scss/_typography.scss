@@ -18,6 +18,15 @@ h2 {
 	margin-bottom: 20px;
 }
 
+h3 {
+	font-family: $font-sans;
+	text-transform: uppercase;
+	font-size: rem(18);
+	letter-spacing: 2px;
+	font-weight: 900;
+	margin-bottom: 10px;
+}
+
 p {
 	font-family: $font-sans;
 	font-weight: 300;
