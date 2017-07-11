@@ -24,6 +24,10 @@ html, body {
 	background-color: $the-accent;
 }
 
+.modal-active {
+	overflow: hidden;
+}
+
 #brian {
 	@import 'brian';
 }

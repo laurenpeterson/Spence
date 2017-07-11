@@ -27,10 +27,10 @@
 
     $resTrigger.click(function(e){
       e.preventDefault();
-      $resSection.addClass('lower-panel-show');
-      $('html, body').animate({
-          scrollTop: $resSection.offset().top
-      }, 1000);
+      $resSection.toggleClass('lower-panel-show');
+      // $('html, body').animate({
+      //     scrollTop: $resSection.offset().top
+      // }, 1000);
     });
 
     // smooth scroll from CSS Tricks
@@ -99,6 +99,39 @@
         $this.addClass('title-active'); 
       }, (i * 3000))
     });
+
+    $('.portfolio-card').click(function(e){
+      e.preventDefault();
+      $('.modal-wrap').show();
+      $('body').addClass('modal-active');
+
+      var index = $(this).index() - 1;
+      $('.portfolio-card-expanded').eq(index).show();
+      // console.log()
+    });
+
+    var closeModal = function() {
+      $('body').removeClass('modal-active');
+      $('.portfolio-card-expanded').hide();
+    }
+
+    $('.modal-wrap').click(function(e) {
+      e.preventDefault();
+      var container = $('.portfolio-card-expanded');
+
+      // if the target of the click isn't the container or a descendant of the container
+      if (!container.is(e.target) && container.has(e.target).length === 0) 
+      {
+        $(this).hide();
+        closeModal();
+      }
+    })
+
+    $('.icon-cancel').click(function(){
+      $('.modal-wrap').hide();
+      closeModal();
+    })
+
 
   });
 

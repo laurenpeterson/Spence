@@ -483,15 +483,6 @@ a {
     position: absolute;
     right: auto;
     left: 0; }
-  .spence .icon-cancel {
-    padding-right: 50px; }
-    .spence .icon-cancel:before {
-      position: absolute;
-      top: 22px;
-      right: 15px;
-      width: 20px;
-      height: 20px;
-      font-size: 2em; }
   .spence .drawer-right {
     width: 400px;
     background-color: #84B8C4;
@@ -610,10 +601,48 @@ a {
       margin-bottom: 20px; }
       .spence .ls-portfolio .portfolio-card:nth-child(4n + 2) {
         margin-left: 0; }
+    .spence .ls-portfolio .portfolio-card-expanded {
+      display: none;
+      width: 70%;
+      margin: 0 auto;
+      position: relative; }
+      .spence .ls-portfolio .portfolio-card-expanded .icon-cancel {
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        color: #FFF;
+        font-size: 30px;
+        line-height: 20px;
+        cursor: pointer; }
+      .spence .ls-portfolio .portfolio-card-expanded img {
+        width: 100%; }
+    .spence .ls-portfolio .modal-wrap {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 50px;
+      display: none; }
+      .spence .ls-portfolio .modal-wrap:before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: opacity 0.3s;
+        opacity: 1;
+        pointer-events: none; }
     .spence .ls-portfolio .card-content {
       background-color: #FFF;
       padding: 40px 30px 30px;
-      position: relative; }
+      position: relative;
+      z-index: 0; }
     .spence .ls-portfolio .card-icon {
       background-color: #444;
       color: #FFF;
@@ -635,6 +664,9 @@ a {
 html, body {
   height: 100%;
   background-color: #84B8C4; }
+
+.modal-active {
+  overflow: hidden; }
 
 #brian .full-img {
   background-image: url("../images/space-no-astro.jpg");
