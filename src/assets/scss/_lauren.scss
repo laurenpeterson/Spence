@@ -164,6 +164,17 @@ footer {
 		font-size: rem(12);
 		margin: 40px 0 0;
 	}
+
+	.icon {
+		vertical-align: middle;
+		font-size: 20px;
+		margin-right: 20px;
+
+		&:hover {
+			color: #000;
+			border-bottom: none;
+		}
+	}
 }
 
 .center-badge {
@@ -201,16 +212,7 @@ footer {
 	padding: 5px 20px 5px 0;
 }
 
-.icon {
-	vertical-align: middle;
-	font-size: 20px;
-	margin-right: 20px;
 
-	&:hover {
-		color: #000;
-		border-bottom: none;
-	}
-}
 
 .icon-instagram {
 	font-size: 22px;
@@ -229,6 +231,7 @@ footer {
 }
 
 .res-buton {
+	color: $dark-text;
 	border: 2px solid $dark-text;
 	border-radius: 2px;
 	padding: 10px;
@@ -265,7 +268,19 @@ footer {
 	transition: max-height 1s;
 
 	.resume-container {
+		@include long-shadow($type: box, $color: #74afbb, $length: 50, $fadeout: false, $skew: true, $direction: right);
 		margin: 80px auto 100px;
+		width: 85%;
+
+		@include breakpoint(tablet) {
+			@include long-shadow($type: box, $color: #74afbb, $length: 20, $fadeout: false, $skew: true, $direction: right);
+			width: 90%;
+		}
+
+		@include breakpoint(mobile) {
+			width: 100%;
+			margin: 0 0 3px;
+		}
 	}
 
 	&.lower-panel-show {
@@ -273,5 +288,9 @@ footer {
 		// visibility: visible;
 		// opacity: 1;
 		max-height: 5000px;
+	}
+
+	.download-res-icon {
+		margin-top: 30px;
 	}
 }

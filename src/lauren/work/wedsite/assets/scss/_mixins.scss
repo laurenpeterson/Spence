@@ -1,0 +1,34 @@
+// @mixin bp($point) {
+//   @if $point == l-desktop {
+//     @media only screen and (min-width: 1600px) { @content; }
+//   }
+//   @else if $point == desktop {
+//     @media only screen and (max-width: 1250px) { @content; }
+//   }
+//   @else if $point == tablet {
+//     @media only screen and (max-width: 980px)  { @content; }
+//   }
+//   @else if $point == mobile {
+//     @media only screen and (max-width: 768px)  { @content; }
+//   }
+//   @else if $point == s-mobile {
+//     @media only screen and (max-width: 420px)  { @content; }
+//   }
+// }
+
+@mixin bp($point) {
+  @if $point == l-desktop {
+    @media handheld, screen and (min-width: 1600px) { @content; }
+  } @else if $point == desktop { 
+    @media handheld, screen and (max-width: 1250px) { @content; }
+  } @else if $point == tablet  {
+    @media handheld, screen and (max-width: 980px)  { @content; }
+  } @else if $point == mobile  {
+    @media handheld, screen and (max-width: 768px)  { @content; }
+  } @else if $point == s-mobile {
+    @media handheld, screen and (max-width: 420px)  { @content; }
+  } @else {
+    @media handheld, screen and (max-width: #{$point})  { @content; }
+  }
+}
+

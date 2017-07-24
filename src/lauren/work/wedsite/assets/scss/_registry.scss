@@ -1,0 +1,41 @@
+.text-bar {
+	background-image: url('../images/lbp-60.jpg');
+	background-position: bottom;
+	position: relative;
+	padding: 60px 0;
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(255, 255, 255, 0.7);
+	}
+
+	a {
+		font-family: 'Lato', sans-serif;
+	}
+	
+	.common-content {
+		position: relative;
+	}
+}
+
+.registry {
+	width: 50%;
+	float: left;
+	padding: 2% 8%;
+	margin-top: 20px;
+	border-right: 1px solid #444;
+
+	&:last-child {
+		border-right: 0;
+	}
+
+	@include bp(mobile) {
+		width: 100%;
+	}
+}

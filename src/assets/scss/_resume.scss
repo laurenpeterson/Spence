@@ -17,7 +17,6 @@
 }
 
 .resume-container {
-	@include long-shadow($type: box, $color: #74afbb, $length: 50, $fadeout: false, $skew: true, $direction: right);
 	width: 100%;
 	max-width: 1180px;
 	background-color: #FFF;
@@ -54,8 +53,8 @@
 	}
 
 	h2 {
-		// margin-bottom: 30px;
-		margin-bottom: 5px;
+		margin-bottom: 30px;
+		// margin-bottom: 5px;
 	}
 
 	h3 {
@@ -88,7 +87,11 @@
 	    border-bottom: 2px solid $resume-subead;
 	    border-top: 2px solid $resume-subead;
 	    width: 90%;
-	    padding: 0.5em 0 2em;
+	    padding: 0.5em 0;
+
+	    &:hover {
+	    	border-bottom: 2px solid $resume-subead;
+	    }
 		}
 
 		@include breakpoint(s-mobile) {

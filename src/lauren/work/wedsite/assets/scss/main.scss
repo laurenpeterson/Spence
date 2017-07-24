@@ -1,0 +1,40 @@
+@import 'compass';
+@import 'mixins';
+
+#wed-site {
+	@import 'reset';
+	@import 'framework';
+	@import 'type';
+	@import 'nav';
+	@import 'home';
+	@import 'details';
+	@import 'registry';
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	@include box-sizing(border-box);
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	color: #444;
+	font-family: 'EB Garamond', georgia, 'Georgia', 'Nixie One', serif;
+}
+
+@font-face {
+    font-family: 'hlt_anna_clararegular';
+    src: url('../fonts/HLT Anna Clara-webfont.eot');
+    src: url('../fonts/HLT Anna Clara-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/HLT Anna Clara-webfont.woff2') format('woff2'),
+         url('../fonts/HLT Anna Clara-webfont.woff') format('woff'),
+         url('../fonts/HLT Anna Clara-webfont.ttf') format('truetype'),
+         url('../fonts/HLT Anna Clara-webfont.svg#hlt_anna_clararegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

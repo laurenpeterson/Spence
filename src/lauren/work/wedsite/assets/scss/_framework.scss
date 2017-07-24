@@ -1,0 +1,123 @@
+$minty: #00533B;
+$light-minty: #00A777;
+
+.bg-wrap {
+	background-position: 70% top;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	background-size: cover;
+
+	&:after {
+		padding-top: 67.25%;
+		content: '';
+		display: block;
+	}
+}
+
+.clear {
+	clear: both;
+}
+
+.index-content {
+	background: #FFF;
+	text-align: center;
+	@include clearfix;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.common-content {
+	padding: 0 50px;
+	text-align: center;
+	@include clearfix;
+	max-width: 1180px;
+	margin: 0 auto;
+
+	@include bp(mobile) {
+		padding: 0;
+	}
+}
+
+.footer {
+	width: 100%;
+	background: $minty;
+	position: relative;
+	padding: 100px 0;
+	color: #444;
+
+	@include bp(mobile) {
+		padding: 100px 15px;
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(255, 255, 255, 0.5);
+	}
+
+	.subhead {
+		position: relative;
+		text-align: center;
+	}
+
+	ul {
+		width: 80%;
+		margin: 0 auto 50px;
+		text-align: center;
+		position: relative;
+
+		li {
+			@include inline-block;
+			width: 25%;
+			border-right: 1px solid #444;
+			padding: 20px 0;
+
+			@include bp (mobile) {
+				width: 100%;
+				display: block;
+				border-right: 0;
+				border-bottom: 1px solid #444;
+			}
+
+			&:last-child {
+				margin-right: 0;
+				border: 0;
+			}
+		}
+	}
+
+	p {
+		color: #444;
+		position: relative;
+	}
+
+	a {
+		color: $minty;
+		&:hover {
+			color: $light-minty;
+		}
+	}
+}
+
+.sticky {  
+    position: fixed;  
+    width: 100%;  
+    left: 0;  
+    top: 0;  
+    z-index: 100;  
+    border-top: 0;  
+} 
+
+.anchor {
+	display: block; 
+	position: relative; 
+	top: -77px; 
+	visibility: hidden;
+} 

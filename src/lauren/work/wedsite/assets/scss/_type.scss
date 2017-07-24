@@ -1,0 +1,80 @@
+
+h1 {
+	text-align: center;
+	margin: 40px auto 0;
+	width: 375px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 1.8em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-bottom: 1px solid #FFF;
+	padding-bottom: 10px;
+
+	@include bp(mobile) {
+		border-bottom: 1px solid #444;
+		width: auto;
+	}
+}
+
+h2 {
+	font-family: 'hlt_anna_clararegular';
+	text-align: center;
+	font-size: 2.5em;
+	line-height: 1.5em;
+
+	@include bp(mobile) {
+		display: none;
+	}
+}
+
+.dark-minty {
+	//: $minty;
+}
+
+h3 {
+	font-size: 1.8em;
+	margin: 0 0 1.2em 0;
+	padding-top: 10px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+h4 {
+	@extend h1;
+	border-bottom: none;
+	font-size: 2em;
+
+	@include bp(mobile) {
+		margin-top: 10px;
+	}
+}
+
+.line-top {
+	border-top: 1px solid #444;
+	margin: 20px auto;
+	font-family: 'Nixie One', serif;
+	font-size: 3em;
+	letter-spacing: 2px;
+}
+
+a {
+	color: $light-minty;
+	text-decoration: none;
+
+	&:hover {
+		color: $minty;
+	}
+}
+
+.subhead {
+	font-size: 1.5em;
+	margin-bottom: 0.7em;
+	letter-spacing: 0.4px;
+}
+
+p {
+	margin-bottom: 0.5em;
+	line-height: 1.5em;
+}

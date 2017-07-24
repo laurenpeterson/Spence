@@ -107,21 +107,23 @@
 
       var index = $(this).index() - 1;
       $('.portfolio-card-expanded').eq(index).show();
-      // console.log()
+      // console.log('')
     });
 
-    var closeModal = function() {
+    var closeModal = function() { 
       $('body').removeClass('modal-active');
       $('.portfolio-card-expanded').hide();
     }
 
     $('.modal-wrap').click(function(e) {
-      e.preventDefault();
+      // e.preventDefault();
       var container = $('.portfolio-card-expanded');
-
+      console.log('beep');
+      
       // if the target of the click isn't the container or a descendant of the container
       if (!container.is(e.target) && container.has(e.target).length === 0) 
       {
+        console.log('boop');
         $(this).hide();
         closeModal();
       }

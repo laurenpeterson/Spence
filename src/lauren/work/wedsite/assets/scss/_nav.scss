@@ -1,0 +1,71 @@
+nav {
+	background: #FFF;
+	width: 100%;
+	padding: 20px 0;
+	@include box-shadow(0 2px 3px 0 rgba(50, 50, 50, 0.4));
+	position: relative;
+	z-index: 2;
+	@include bp(mobile) {padding: 10px 0;}
+
+
+	ul {
+		width: 80%;
+		text-align: center;
+		margin: 0 auto;
+
+		li {
+			@include inline-block;
+			list-style-type: none;
+			font-family: 'Nixie One', serif;
+			text-transform: uppercase;
+			margin-right: 10%;
+			@include transition(color 0.5s);
+			@include bp(mobile) {display: none;}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&:first-child {
+				font-size: 2em;
+				@include bp(mobile) {
+					display: block;
+					text-align: center;
+					margin-right: 0;
+				}
+
+				a {
+					color: $light-minty;
+					@include transition(color 0.5s);
+
+					&:hover {
+						color: #444;
+						@include transition(color 0.5s);
+					}
+				}
+
+
+			}
+
+			&:hover {
+				color: $minty;
+				@include transition(color 0.3s);
+			}
+		}
+	}
+
+	.active {
+		color: $light-minty;
+		border-bottom: 1px solid $light-minty;
+		padding-bottom: 3px;
+	}
+
+	a {
+		color: #444;
+		text-decoration: none;
+
+		&:hover {
+			color: $light-minty;
+		}
+	}
+}

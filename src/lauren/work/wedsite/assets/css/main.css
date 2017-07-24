@@ -1,0 +1,669 @@
+/* line 4, ../scss/main.scss */
+#wed-site {
+  /* HTML5 display-role reset for older browsers */
+}
+/* line 13, ../scss/_reset.scss */
+#wed-site html, #wed-site body, #wed-site div, #wed-site span, #wed-site applet, #wed-site object, #wed-site iframe,
+#wed-site h1,
+#wed-site h4, #wed-site h2, #wed-site h3, #wed-site h4, #wed-site h5, #wed-site h6, #wed-site p, #wed-site blockquote, #wed-site pre,
+#wed-site a, #wed-site abbr, #wed-site acronym, #wed-site address, #wed-site big, #wed-site cite, #wed-site code,
+#wed-site del, #wed-site dfn, #wed-site em, #wed-site img, #wed-site ins, #wed-site kbd, #wed-site q, #wed-site s, #wed-site samp,
+#wed-site small, #wed-site strike, #wed-site strong, #wed-site sub, #wed-site sup, #wed-site tt, #wed-site var,
+#wed-site b, #wed-site u, #wed-site i, #wed-site center,
+#wed-site dl, #wed-site dt, #wed-site dd, #wed-site ol, #wed-site ul, #wed-site li,
+#wed-site fieldset, #wed-site form, #wed-site label, #wed-site legend,
+#wed-site table, #wed-site caption, #wed-site tbody, #wed-site tfoot, #wed-site thead, #wed-site tr, #wed-site th, #wed-site td,
+#wed-site article, #wed-site aside, #wed-site canvas, #wed-site details, #wed-site embed,
+#wed-site figure, #wed-site figcaption, #wed-site footer, #wed-site header, #wed-site hgroup,
+#wed-site menu, #wed-site nav, #wed-site output, #wed-site ruby, #wed-site section, #wed-site summary,
+#wed-site time, #wed-site mark, #wed-site audio, #wed-site video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* line 25, ../scss/_reset.scss */
+#wed-site article, #wed-site aside, #wed-site details, #wed-site figcaption, #wed-site figure,
+#wed-site footer, #wed-site header, #wed-site hgroup, #wed-site menu, #wed-site nav, #wed-site section {
+  display: block;
+}
+/* line 29, ../scss/_reset.scss */
+#wed-site body {
+  line-height: 1;
+}
+/* line 33, ../scss/_reset.scss */
+#wed-site ol, #wed-site ul {
+  list-style: none;
+}
+/* line 37, ../scss/_reset.scss */
+#wed-site blockquote, #wed-site q {
+  quotes: none;
+}
+/* line 42, ../scss/_reset.scss */
+#wed-site blockquote:before, #wed-site blockquote:after,
+#wed-site q:before, #wed-site q:after {
+  content: '';
+  content: none;
+}
+/* line 47, ../scss/_reset.scss */
+#wed-site table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 4, ../scss/_framework.scss */
+#wed-site .bg-wrap {
+  background-position: 70% top;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+}
+/* line 12, ../scss/_framework.scss */
+#wed-site .bg-wrap:after {
+  padding-top: 67.25%;
+  content: '';
+  display: block;
+}
+/* line 19, ../scss/_framework.scss */
+#wed-site .clear {
+  clear: both;
+}
+/* line 23, ../scss/_framework.scss */
+#wed-site .index-content {
+  background: #FFF;
+  text-align: center;
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* line 31, ../scss/_framework.scss */
+#wed-site .common-content {
+  padding: 0 50px;
+  text-align: center;
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+@media handheld, screen and (max-width: 768px) {
+  /* line 31, ../scss/_framework.scss */
+  #wed-site .common-content {
+    padding: 0;
+  }
+}
+/* line 43, ../scss/_framework.scss */
+#wed-site .footer {
+  width: 100%;
+  background: #00533b;
+  position: relative;
+  padding: 100px 0;
+  color: #444;
+}
+@media handheld, screen and (max-width: 768px) {
+  /* line 43, ../scss/_framework.scss */
+  #wed-site .footer {
+    padding: 100px 15px;
+  }
+}
+/* line 54, ../scss/_framework.scss */
+#wed-site .footer:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+/* line 65, ../scss/_framework.scss */
+#wed-site .footer .subhead {
+  position: relative;
+  text-align: center;
+}
+/* line 70, ../scss/_framework.scss */
+#wed-site .footer ul {
+  width: 80%;
+  margin: 0 auto 50px;
+  text-align: center;
+  position: relative;
+}
+/* line 76, ../scss/_framework.scss */
+#wed-site .footer ul li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 25%;
+  border-right: 1px solid #444;
+  padding: 20px 0;
+}
+@media handheld, screen and (max-width: 768px) {
+  /* line 76, ../scss/_framework.scss */
+  #wed-site .footer ul li {
+    width: 100%;
+    display: block;
+    border-right: 0;
+    border-bottom: 1px solid #444;
+  }
+}
+/* line 89, ../scss/_framework.scss */
+#wed-site .footer ul li:last-child {
+  margin-right: 0;
+  border: 0;
+}
+/* line 96, ../scss/_framework.scss */
+#wed-site .footer p {
+  color: #444;
+  position: relative;
+}
+/* line 101, ../scss/_framework.scss */
+#wed-site .footer a {
+  color: #00533b;
+}
+/* line 103, ../scss/_framework.scss */
+#wed-site .footer a:hover {
+  color: #00a777;
+}
+/* line 109, ../scss/_framework.scss */
+#wed-site .sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+/* line 118, ../scss/_framework.scss */
+#wed-site .anchor {
+  display: block;
+  position: relative;
+  top: -77px;
+  visibility: hidden;
+}
+/* line 2, ../scss/_type.scss */
+#wed-site h1, #wed-site h4 {
+  text-align: center;
+  margin: 40px auto 0;
+  width: 375px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #FFF;
+  padding-bottom: 10px;
+}
+@media handheld, screen and (max-width: 768px) {
+  /* line 2, ../scss/_type.scss */
+  #wed-site h1, #wed-site h4 {
+    border-bottom: 1px solid #444;
+    width: auto;
+  }
+}
+/* line 20, ../scss/_type.scss */
+#wed-site h2 {
+  font-family: 'hlt_anna_clararegular';
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 1.5em;
+}
+@media handheld, screen and (max-width: 768px) {
+  /* line 20, ../scss/_type.scss */
+  #wed-site h2 {
+    display: none;
+  }
+}
+/* line 35, ../scss/_type.scss */
+#wed-site h3 {
+  font-size: 1.8em;
+  margin: 0 0 1.2em 0;
+  padding-top: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+/* line 44, ../scss/_type.scss */
+#wed-site h4 {
+  border-bottom: none;
+  font-size: 2em;
+}
+@media handheld, screen and (max-width: 768px) {
+  /* line 44, ../scss/_type.scss */
+  #wed-site h4 {
+    margin-top: 10px;
+  }
+}
+/* line 54, ../scss/_type.scss */
+#wed-site .line-top {
+  border-top: 1px solid #444;
+  margin: 20px auto;
+  font-family: 'Nixie One', serif;
+  font-size: 3em;
+  letter-spacing: 2px;
+}
+/* line 62, ../scss/_type.scss */
+#wed-site a {
+  color: #00a777;
+  text-decoration: none;
+}
+/* line 66, ../scss/_type.scss */
+#wed-site a:hover {
+  color: #00533b;
+}
+/* line 71, ../scss/_type.scss */
+#wed-site .subhead {
+  font-size: 1.5em;
+  margin-bottom: 0.7em;
+  letter-spacing: 0.4px;
+}
+/* line 77, ../scss/_type.scss */
+#wed-site p {
+  margin-bottom: 0.5em;
+  line-height: 1.5em;
+}
+/* line 1, ../scss/_nav.scss */
+#wed-site nav {
+  background: #FFF;
+  width: 100%;
+  padding: 20px 0;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(50, 50, 50, 0.4);
+  -moz-box-shadow: 0 2px 3px 0 rgba(50, 50, 50, 0.4);
+  box-shadow: 0 2px 3px 0 rgba(50, 50, 50, 0.4);
+  position: relative;
+  z-index: 2;
+}
+@media handheld, screen and (max-width: 768px) {
+  /* line 1, ../scss/_nav.scss */
+  #wed-site nav {
+    padding: 10px 0;
+  }
+}
+/* line 11, ../scss/_nav.scss */
+#wed-site nav ul {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+/* line 16, ../scss/_nav.scss */
+#wed-site nav ul li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  list-style-type: none;
+  font-family: 'Nixie One', serif;
+  text-transform: uppercase;
+  margin-right: 10%;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+@media handheld, screen and (max-width: 768px) {
+  /* line 16, ../scss/_nav.scss */
+  #wed-site nav ul li {
+    display: none;
+  }
+}
+/* line 25, ../scss/_nav.scss */
+#wed-site nav ul li:last-child {
+  margin-right: 0;
+}
+/* line 29, ../scss/_nav.scss */
+#wed-site nav ul li:first-child {
+  font-size: 2em;
+}
+@media handheld, screen and (max-width: 768px) {
+  /* line 29, ../scss/_nav.scss */
+  #wed-site nav ul li:first-child {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+  }
+}
+/* line 37, ../scss/_nav.scss */
+#wed-site nav ul li:first-child a {
+  color: #00a777;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+/* line 41, ../scss/_nav.scss */
+#wed-site nav ul li:first-child a:hover {
+  color: #444;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+/* line 50, ../scss/_nav.scss */
+#wed-site nav ul li:hover {
+  color: #00533b;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+/* line 57, ../scss/_nav.scss */
+#wed-site nav .active {
+  color: #00a777;
+  border-bottom: 1px solid #00a777;
+  padding-bottom: 3px;
+}
+/* line 63, ../scss/_nav.scss */
+#wed-site nav a {
+  color: #444;
+  text-decoration: none;
+}
+/* line 67, ../scss/_nav.scss */
+#wed-site nav a:hover {
+  color: #00a777;
+}
+/* line 2, ../scss/_home.scss */
+#wed-site .hero-img {
+  background-image: url("../images/lbp-39.jpg");
+}
+@media handheld, screen and (max-width: 768px) {
+  /* line 2, ../scss/_home.scss */
+  #wed-site .hero-img {
+    background-size: 120%;
+    background-position: center top;
+  }
+  /* line 10, ../scss/_home.scss */
+  #wed-site .hero-img:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+/* line 23, ../scss/_home.scss */
+#wed-site .persimmon {
+  background-image: url("../images/persimmon.jpg");
+  background-position: bottom;
+}
+/* line 28, ../scss/_home.scss */
+#wed-site .pool {
+  background-image: url("../images/lbp-60.jpg");
+  background-position: bottom;
+}
+/* line 33, ../scss/_home.scss */
+#wed-site .hero {
+  width: 80%;
+  margin: 0 auto;
+  padding: 80px 40px;
+  position: absolute;
+  color: #FFF;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+@media handheld, screen and (max-width: 768px) {
+  /* line 33, ../scss/_home.scss */
+  #wed-site .hero {
+    width: 100%;
+    padding: 5%;
+    color: #444;
+  }
+}
+/* line 60, ../scss/_home.scss */
+#wed-site .grid {
+  margin: 50px auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+@media handheld, screen and (max-width: 768px) {
+  /* line 60, ../scss/_home.scss */
+  #wed-site .grid {
+    display: none;
+  }
+}
+/* line 69, ../scss/_home.scss */
+#wed-site .grid-col {
+  width: 32%;
+  margin-right: 2%;
+  float: left;
+}
+/* line 74, ../scss/_home.scss */
+#wed-site .grid-col:last-child {
+  margin-right: 0;
+}
+/* line 78, ../scss/_home.scss */
+#wed-site .grid-col img {
+  width: 100%;
+}
+/* line 84, ../scss/_home.scss */
+#wed-site .grid-item {
+  position: relative;
+  margin-bottom: 20px;
+  line-height: 0;
+}
+/* line 89, ../scss/_home.scss */
+#wed-site .grid-item .hover-color {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 83, 59, 0.8);
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+/* line 101, ../scss/_home.scss */
+#wed-site .grid-item .hover-color:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+/* line 107, ../scss/_home.scss */
+#wed-site .grid-item p {
+  color: #FFF;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1em;
+  width: 75%;
+  line-height: 1.5em;
+}
+/* line 120, ../scss/_home.scss */
+#wed-site .heart-img {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 200px;
+}
+/* line 2, ../scss/_details.scss */
+#wed-site .text-right .detail-text, #wed-site .text-left .detail-text {
+  width: 50%;
+  padding: 10% 0;
+}
+@media handheld, screen and (max-width: 768px) {
+  /* line 2, ../scss/_details.scss */
+  #wed-site .text-right .detail-text, #wed-site .text-left .detail-text {
+    width: 100%;
+    padding: 5%;
+  }
+}
+/* line 12, ../scss/_details.scss */
+#wed-site .text-right .detail-text li, #wed-site .text-left .detail-text li {
+  list-style-type: none;
+}
+/* line 15, ../scss/_details.scss */
+#wed-site .text-right .detail-text li:first-child, #wed-site .text-left .detail-text li:first-child {
+  margin-top: 20px;
+}
+/* line 17, ../scss/_details.scss */
+#wed-site .text-right .detail-text li a, #wed-site .text-left .detail-text li a {
+  font-size: 1.5em;
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
+  color: #00533b;
+}
+/* line 24, ../scss/_details.scss */
+#wed-site .text-right .detail-text li p, #wed-site .text-left .detail-text li p {
+  font-style: italic;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  margin-top: 0.3em;
+}
+/* line 33, ../scss/_details.scss */
+#wed-site .text-right {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 36, ../scss/_details.scss */
+#wed-site .text-right img, #wed-site .text-right iframe {
+  float: left;
+  width: 50%;
+}
+/* line 41, ../scss/_details.scss */
+#wed-site .text-right .detail-text {
+  float: right;
+  text-align: left;
+  padding-left: 5%;
+}
+/* line 50, ../scss/_details.scss */
+#wed-site .text-left {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 53, ../scss/_details.scss */
+#wed-site .text-left img, #wed-site .text-left iframe {
+  float: right;
+  width: 50%;
+}
+/* line 58, ../scss/_details.scss */
+#wed-site .text-left .detail-text {
+  float: left;
+  text-align: right;
+  padding-right: 5%;
+}
+@media handheld, screen and (max-width: 768px) {
+  /* line 58, ../scss/_details.scss */
+  #wed-site .text-left .detail-text {
+    text-align: left;
+  }
+}
+/* line 69, ../scss/_details.scss */
+#wed-site .text-left h2 {
+  text-align: right;
+}
+/* line 74, ../scss/_details.scss */
+#wed-site .text-left:before, #wed-site .text-right:before {
+  display: block;
+  content: " ";
+  margin-top: -77px;
+  height: 77px;
+  visibility: hidden;
+}
+@media handheld, screen and (max-width: 768px) {
+  /* line 82, ../scss/_details.scss */
+  #wed-site .text-left img, #wed-site .text-right img {
+    width: 100%;
+    float: none;
+  }
+}
+/* line 1, ../scss/_registry.scss */
+#wed-site .text-bar {
+  background-image: url("../images/lbp-60.jpg");
+  background-position: bottom;
+  position: relative;
+  padding: 60px 0;
+}
+/* line 7, ../scss/_registry.scss */
+#wed-site .text-bar:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+}
+/* line 18, ../scss/_registry.scss */
+#wed-site .text-bar a {
+  font-family: 'Lato', sans-serif;
+}
+/* line 22, ../scss/_registry.scss */
+#wed-site .text-bar .common-content {
+  position: relative;
+}
+/* line 27, ../scss/_registry.scss */
+#wed-site .registry {
+  width: 50%;
+  float: left;
+  padding: 2% 8%;
+  margin-top: 20px;
+  border-right: 1px solid #444;
+}
+/* line 34, ../scss/_registry.scss */
+#wed-site .registry:last-child {
+  border-right: 0;
+}
+@media handheld, screen and (max-width: 768px) {
+  /* line 27, ../scss/_registry.scss */
+  #wed-site .registry {
+    width: 100%;
+  }
+}
+
+/* line 14, ../scss/main.scss */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 20, ../scss/main.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 24, ../scss/main.scss */
+body {
+  color: #444;
+  font-family: 'EB Garamond', georgia, 'Georgia', 'Nixie One', serif;
+}
+
+@font-face {
+  font-family: 'hlt_anna_clararegular';
+  src: url("../fonts/HLT Anna Clara-webfont.eot");
+  src: url("../fonts/HLT Anna Clara-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/HLT Anna Clara-webfont.woff2") format("woff2"), url("../fonts/HLT Anna Clara-webfont.woff") format("woff"), url("../fonts/HLT Anna Clara-webfont.ttf") format("truetype"), url("../fonts/HLT Anna Clara-webfont.svg#hlt_anna_clararegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
