@@ -18,6 +18,7 @@
 		<ul class="anchor-nav">
 			<li class="section-link"><a href="#about">About</a></li>
 			<li class="section-link"><a class="resume-trigger" href="#resume-panel">Résumé</a></li>
+			<li class="section-link"><a href="#portfolio">Portfolio</a></li>
 		</ul>
 		<div class="feature-text">
 			<h1>lauren spence</h1>
@@ -32,7 +33,7 @@
 			
 		</div>
 	</div>
-	<section class="ls-about">
+	<section id="about" class="ls-about">
 		<div class="text-wrap ls-animate ls-fade-in">
 			<h2 class="script-header">about</h2>
 			<p class="about-intro">I'm Lauren Spence and I'm a front-end web developer.</p>
@@ -80,14 +81,14 @@
 		</div>
 	</section> -->
 
-	<section class="resume-bar">
+	<section class="resume-bar" id="resume-panel">
 		<h3>Read My Résumé</h3>
-		<div class="center-badge resume-trigger"><span class="icon icon-doc-text-inv"></span></div>
+		<div class="center-badge resume-trigger"><span class="icon fa fa-file-text"></span></div>
 	</section>
 	
-	<section class="resume-panel" id="resume-panel">
+	<section class="resume-panel">
 		<div class="resume-container">
-		<a class="icon icon-doc-text download-res-icon" href="../assets/downloads/Lauren_Spence_Resume.pdf" target="_blank"><p>Download PDF</p></a>	
+		<a class="icon fa fa-file-text-o download-res-icon" href="../assets/downloads/Lauren_Spence_Resume.pdf" target="_blank"><p>Download PDF</p></a>	
 			
 			<div class="res-section">
 				<h4 class="res-section-heading"></h4>
@@ -176,82 +177,102 @@
 	</section>
 
 	<section class="ls-portfolio">
-		<div class="text-wrap ls-animate ls-fade-in">
+		<div id="portfolio" class="text-wrap ls-animate ls-fade-in">
 			<h2>Selected Work</h2>
-			<p>This work represents some of the Freelance and personal work I've done in the past few years. Parallel to this work, I've been developing high-profile marketing pages, building out modules in CMS'es, coding HTML emails, and so much more. To learn more about the projects I did under NDA, give my résumé a download, and let's get in contact.</p>
+			<p>This work represents some of the Freelance and personal work I've done recently. Parallel to this work, I've been developing high-profile marketing pages, building out modules in CMSes, coding HTML emails, and so much more. To learn more about the projects I did under NDA, give my résumé a download, and let's get in contact.</p>
 		</div>
-		<div class="portfolio-card">
-			<div class="card-img-wrap"><img src="../assets/images/work/square-mercy.jpg" alt="Mercy Church Website"></div>
-			<div class="card-content">
-				<div class="card-icon icon-monitor"></div>
-				<h3 class="card-title">Mercy Church Website</h3>
-				<p class="card-description">Re-designed, developed and currently maintain the website for my local Church.</p>
 
+		<div class="flex-wrapper">
+			<div class="portfolio-card">
+				<div class="card-img-wrap"><img src="../assets/images/work/square-mercy.jpg" alt="Mercy Church Website"></div>
+				<div class="card-content">
+					<div class="card-icon fa fa-desktop"></div>
+					<h3 class="card-title">Mercy Church Website</h3>
+					<p class="card-description">Re-designed, developed and currently maintain the website for my local Church.</p>
+				</div>
+			</div>
+			<div class="portfolio-card">
+				<div class="card-img-wrap"><img src="../assets/images/work/square-stubsite.jpg" alt="Identity Websites"></div>
+				<div class="card-content">
+					<div class="card-icon fa fa-desktop"></div>
+					<h3 class="card-title">Identity Sites</h3>
+					<p class="card-description">Mini informational websites built for friends and family to build their web presence.</p>
+				</div>
+			</div>
+			<div class="portfolio-card">
+				<div class="card-img-wrap"><img src="../assets/images/work/square-ccdc.jpg" alt="Central Coast Dream Center"></div>
+				<div class="card-content">
+					<div class="card-icon fa fa-desktop"></div>
+					<h3 class="card-title">Central Coast Dream Center</h3>
+					<p class="card-description">Developed and designed the site for this local nonprofit organization.</p>
+				</div>
+			</div>
+			<div class="portfolio-card">
+				<div class="card-img-wrap"><img src="../assets/images/work/square-rosetta.jpg" alt="Rosetta Website"></div>
+				<div class="card-content">
+					<div class="card-icon fa fa-desktop"></div>
+					<h3 class="card-title">Rosetta.com</h3>
+					<p class="card-description">Developed part of Rosetta's website using Kirby CMS.</p>
+				</div>
+			</div>
+			<div class="portfolio-card">
+				<div class="card-img-wrap"><img src="../assets/images/work/square-wedsite.jpg" alt="Wedding Website"></div>
+				<div class="card-content">
+					<div class="card-icon fa fa-desktop"></div>
+					<h3 class="card-title">Wedding Website</h3>
+					<p class="card-description">Designed and developed this informational site for my wedding.</p>
+				</div>
+			</div>
+			<div class="portfolio-card">
+				<div class="card-img-wrap"><img src="../assets/images/work/square-swap.jpg" alt="Clothing Swap Invitation Design"></div>
+				<div class="card-content">
+					<div class="card-icon fa fa-paint-brush"></div>
+					<h3 class="card-title">Clothing Swap Invitations</h3>
+					<p class="card-description">Designed these event invitations for an outreach event at my church.</p>
+				</div>
+			</div>
+			<div class="portfolio-card">
+				<div class="card-img-wrap"><img src="../assets/images/work/square-shower.jpg" alt="Bridal Shower Invitation Design"></div>
+				<div class="card-content">
+					<div class="card-icon fa fa-paint-brush"></div>
+					<h3 class="card-title">Bridal Shower Invitations</h3>
+					<p class="card-description">Invitations I painted and designed for a bridal shower.</p>
+				</div>
+			</div>
+			
+			<div class="portfolio-card">
+				<div class="card-img-wrap"><img src="../assets/images/work/square-dress-rpc.jpg" alt="Clothing Swap Invitation Design"></div>
+				<div class="card-content">
+					<div class="card-icon fa fa-wrench"></div>
+					<h3 class="card-title">Hand-Made Swing Dress</h3>
+					<p class="card-description">Drafted my own pattern to sew this custom dress.</p>
+				</div>
+			</div>
+			<div class="portfolio-card">
+				<div class="card-img-wrap"><img src="../assets/images/work/square-quilt.jpg" alt="Quilts"></div>
+				<div class="card-content">
+					<div class="card-icon fa fa-wrench"></div>
+					<h3 class="card-title">Hand-Made Quilts</h3>
+					<p class="card-description">Created practical art with fabric: the modern quilt.</p>
+				</div>
+			</div>
+			<div class="portfolio-card">
+				<div class="card-img-wrap"><img src="../assets/images/work/square-invite.jpg" alt="Clothing Swap Invitation Design"></div>
+				<div class="card-content">
+					<div class="card-icon fa fa-paint-brush"></div>
+					<h3 class="card-title">Wedding Invitation Suite</h3>
+					<p class="card-description">Designed, printed, and assembled the many pieces of stationery for my wedding.</p>
+				</div>
 			</div>
 		</div>
-		<div class="portfolio-card">
-			<div class="card-img-wrap"><img src="../assets/images/work/square-stubsite.jpg" alt="Identity Websites"></div>
-			<div class="card-content">
-				<div class="card-icon icon-monitor"></div>
-				<h3 class="card-title">Identity Sites</h3>
-				<p class="card-description">Mini informational websites built for friends and family to build their web presence.</p>
-			</div>
-		</div>
-		<div class="portfolio-card">
-			<div class="card-img-wrap"><img src="../assets/images/work/square-ccdc.jpg" alt="Central Coast Dream Center"></div>
-			<div class="card-content">
-				<div class="card-icon icon-monitor"></div>
-				<h3 class="card-title">Central Coast Dream Center</h3>
-				<p class="card-description">Developed and designed the site for this local nonprofit organization.</p>
-			</div>
-		</div>
-		<div class="portfolio-card">
-			<div class="card-img-wrap"><img src="../assets/images/work/square-wedsite.jpg" alt="Wedding Website"></div>
-			<div class="card-content">
-				<div class="card-icon icon-monitor"></div>
-				<h3 class="card-title">Wedding Website</h3>
-				<p class="card-description">Designed and developed this informational site for my wedding.</p>
-			</div>
-		</div>
-		<div class="portfolio-card">
-			<div class="card-img-wrap"><img src="../assets/images/work/square-shower.jpg" alt="Bridal Shower Invitation Design"></div>
-			<div class="card-content">
-				<div class="card-icon fa fa-paint-brush"></div>
-				<h3 class="card-title">Bridal Shower Invitations</h3>
-				<p class="card-description">Invitations I painted and designed for a bridal shower.</p>
-			</div>
-		</div>
-		<div class="portfolio-card">
-			<div class="card-img-wrap"><img src="../assets/images/work/square-swap.jpg" alt="Clothing Swap Invitation Design"></div>
-			<div class="card-content">
-				<div class="card-icon fa fa-paint-brush"></div>
-				<h3 class="card-title">Clothing Swap Invitations</h3>
-				<p class="card-description">Designed these event invitations for an outreach event at my church.</p>
-			</div>
-		</div>
-		<div class="portfolio-card">
-			<div class="card-img-wrap"><img src="../assets/images/work/square-dress-rpc.jpg" alt="Clothing Swap Invitation Design"></div>
-			<div class="card-content">
-				<div class="card-icon fa fa-wrench"></div>
-				<h3 class="card-title">Hand-Made Swing Dress</h3>
-				<p class="card-description">Drafted my own pattern to sew this custom dress.</p>
-			</div>
-		</div>
-		<div class="portfolio-card">
-			<div class="card-img-wrap"><img src="../assets/images/work/square-invite.jpg" alt="Clothing Swap Invitation Design"></div>
-			<div class="card-content">
-				<div class="card-icon fa fa-paint-brush"></div>
-				<h3 class="card-title">Wedding Invitation Suite</h3>
-				<p class="card-description">Designed, printed, and assembled the many pieces of stationery for my wedding.</p>
-			</div>
-		</div>
+		
 
 		<div class="modal-wrap">
 			<div class="portfolio-card-expanded">
-				<div class="icon-cancel"></div>
+				<div class="icon-cancel fa fa-times"></div>
 				<img src="../assets/images/work/rect-mercy.jpg" alt="Mercy Church Website">
 				<div class="card-content">
-					<div class="card-icon icon-monitor"></div>
+					<div class="card-icon fa fa-desktop"></div>
 					<h3 class="card-title">Samsung Thing</h3>
 					<p>Technologies: Wordpress, custom CSS</p>
 					<p class="card-description">This was a thing I did and oh boy was it cool</p>
@@ -260,12 +281,12 @@
 			</div>
 
 			<div class="portfolio-card-expanded">
-				<div class="icon-cancel"></div>
+				<div class="icon-cancel fa fa-times"></div>
 				<img src="../assets/images/work/rect-stubsite.jpg" alt="Identity Websites">
 				<div class="card-content">
-					<div class="card-icon icon-monitor"></div>
+					<div class="card-icon fa fa-desktop"></div>
 					<h3 class="card-title">Identity Sites</h3>
-					<p>Technologies: HTML, CSS, JS</p>
+					<p>Technologies: HTML, SCSS, JS</p>
 					<p class="card-description">I developed several small websites for myself, my friends, and my family to use as mini informational websites. They consist of a main image, a popout about section, an optional resume section, and links to social media. One of these was the starting point for this very website, though as you can see, I've expanded this one quite a bit. </p>
 					<a class="ls-button" href="http://katherineblizard.com/" target="_blank">View Katherine <i class="fa fa-external-link" aria-hidden="true"></i></a>
 					<a class="ls-button" href="http://spence.life/brian/" target="_blank">View Brian <i class="fa fa-external-link" aria-hidden="true"></i></a>
@@ -274,10 +295,10 @@
 			</div>
 
 			<div class="portfolio-card-expanded">
-				<div class="icon-cancel"></div>
+				<div class="icon-cancel fa fa-times"></div>
 				<img src="../assets/images/work/rect-ccdc.jpg" alt="Central Coast Dream Center Website">
 				<div class="card-content">
-					<div class="card-icon icon-monitor"></div>
+					<div class="card-icon fa fa-desktop"></div>
 					<h3 class="card-title">Central Coast Dream Center Website</h3>
 					<p>Technologies: Wordpress, custom CSS</p>
 					<p class="card-description">The Central Coast Dream Center is a local non-profit organization run through the fine folks at Mercy Church in San Luis Obispo and Santa Maria. I developed this entire website for them, did all of the design, and sourced stock photography. This website helps the founders meet with potential volunteers and donors to show them what the Dream Center is about, how to get involved, and creates a central place for donations.</p>
@@ -286,28 +307,30 @@
 			</div>
 
 			<div class="portfolio-card-expanded">
-				<div class="icon-cancel"></div>
+				<div class="icon-cancel fa fa-times"></div>
+				<img src="../assets/images/work/rect-rosetta.jpg" alt="Rosetta Website">
+				<div class="card-content">
+					<div class="card-icon fa fa-desktop"></div>
+					<h3 class="card-title">Rosetta.com</h3>
+					<p>Technologies: HTML, SCSS, <a href="https://getkirby.com/" target="_blank">Kirby</a></p>
+					<p class="card-description">I was part of the team to develop this beautiful, magazine style website for Rosetta, the company I've worked at for the last 4 years. We worked with our internal marketing team's talented designers to make this pixel-perfect website a reality. </p>
+					<a class="ls-button" href="http://www.rosetta.com" target="_blank">View Rosetta.com<i class="fa fa-external-link" aria-hidden="true"></i></a>
+				</div>
+			</div>
+
+			<div class="portfolio-card-expanded">
+				<div class="icon-cancel fa fa-times"></div>
 				<img src="../assets/images/work/rect-wedsite.jpg" alt="Wedding Website">
 				<div class="card-content">
-					<div class="card-icon icon-monitor"></div>
+					<div class="card-icon fa fa-desktop"></div>
 					<h3 class="card-title">Wedding Website</h3>
-					<p>Technologies: HTML, CSS, JS</p>
+					<p>Technologies: HTML, SCSS, JS</p>
 					<p class="card-description">To let my guests know important details about my wedding, I opted to design and build a website myself instead of using one of the free templated sites that are so popular for that purpose. The free ones are nice if you don't know how to build a website, but since I do, I felt I just had to take the time to develop it myself. It includes directions, helpful information, and features some of our gorgeous engagement photos by <a href="http://novelhill.com/" target="_blank">Novel Hill</a>. </p>
 					<a class="ls-button" href="work/wedsite" target="_blank">View Wed-Site <i class="fa fa-external-link" aria-hidden="true"></i></a>
 				</div>
 			</div>
 			<div class="portfolio-card-expanded">
-				<div class="icon-cancel"></div>
-				<img src="../assets/images/work/rect-shower.jpg" alt="Bridal Shower Invititation">
-				<div class="card-content">
-					<div class="card-icon fa fa-paint-brush"></div>
-					<h3 class="card-title">Bridal Shower Invitations</h3>
-					<p>Tools: Watercolor, Photoshop, InDesign</p>
-					<p class="card-description">I created these invitations for a bridal shower that my friends and I hosted. I used watercolor to paint the hearts, then scanned the finished piece and touched it up in Photoshop, adding in some hearts in Photoshop where they were more sparse. I also used Photoshop to manipulate the hearts into an umbrella shape to play with the bridal "showers" pun. I then used this as a background and did the type in InDesign. These are two concept designs I did - the bride chose the one on the left.</p>
-				</div>
-			</div>
-			<div class="portfolio-card-expanded">
-				<div class="icon-cancel"></div>
+				<div class="icon-cancel fa fa-times"></div>
 				<img src="../assets/images/work/rect-swap.jpg" alt="Clothing Swap Invitations">
 				<div class="card-content">
 					<div class="card-icon fa fa-paint-brush"></div>
@@ -317,17 +340,37 @@
 				</div>
 			</div>
 			<div class="portfolio-card-expanded">
-				<div class="icon-cancel"></div>
+				<div class="icon-cancel fa fa-times"></div>
+				<img src="../assets/images/work/rect-shower.jpg" alt="Bridal Shower Invititation">
+				<div class="card-content">
+					<div class="card-icon fa fa-paint-brush"></div>
+					<h3 class="card-title">Bridal Shower Invitations</h3>
+					<p>Tools: Watercolor, Photoshop, InDesign</p>
+					<p class="card-description">I created these invitations for a bridal shower that my friends and I hosted. I used watercolor to paint the hearts, then scanned the finished piece and touched it up in Photoshop, adding in some hearts in Photoshop where they were more sparse. I also used Photoshop to manipulate the hearts into an umbrella shape to play with the bridal "showers" pun. I then used this as a background and did the type in InDesign. These are two concept designs I did - the bride chose the one on the left.</p>
+				</div>
+			</div>
+			<div class="portfolio-card-expanded">
+				<div class="icon-cancel fa fa-times"></div>
 				<img src="../assets/images/work/rect-dress-rpc.jpg" alt="Hand Made Dress">
 				<div class="card-content">
 					<div class="card-icon fa fa-wrench"></div>
 					<h3 class="card-title">Hand Made Swing Dress</h3>
-					<p>Tools: Rayon, Pfaff Ambition Essential Sewing Machine</p>
-					<p class="card-description">I designed and printed these invitations for an event for my small group at Church. We passed these out to friends and aquaintences to bring people together for community and fun. These are the two final designs I made - we ended up printing and handing them both out.</p>
+					<p>Tools: <a href="https://riflepaperco.com/collections/cotton-and-steel-fabric/birch-floral-crimson-rayon-fabric/" target="_blank">Rayon</a>, <a href="http://www.pfaff.com/en-US/Machines/ambition-essential" target="_blank">Pfaff Ambition Essential Sewing Machine</a></p>
+					<p class="card-description">I made this simple swing dress myself, and drafted my own pattern using an existing garment I liked. For the construction, I used French seams and two different methods of bias binding for the neck and arm holes. This was my first time working with rayon, and I'm very proud of the results.</p>
 				</div>
 			</div>
 			<div class="portfolio-card-expanded">
-				<div class="icon-cancel"></div>
+				<div class="icon-cancel fa fa-times"></div>
+				<img src="../assets/images/work/rect-quilt.jpg" alt="Hand Made Quilts">
+				<div class="card-content">
+					<div class="card-icon fa fa-wrench"></div>
+					<h3 class="card-title">Hand Made Quilts</h3>
+					<p>Tools: <a href="http://www.pfaff.com/en-US/Machines/ambition-essential" target="_blank">Pfaff Ambition Essential Sewing Machine</a>, quilting cottons, quilter's thread</p>
+					<p class="card-description">Since I discovered this practical art form, I've made more than 10 quilts, ranging in size from small wall hangings to baby quilts, to full-sized bed quilts. I've followed the patterns of other talented sewists (center quilt <a href="http://ohfransson.bigcartel.com/product/fancy-forest-pdf-quilt-pattern" target="_blank">here</a>), drafted my own pattern based off an inspiration photo (<a href="https://issuu.com/artgalleryfab/docs/lavish_by_katarina_roccella/10" target="_blank">here</a>), and figured out my own designs based on foundational quilter's blocks. </p>
+				</div>
+			</div>
+			<div class="portfolio-card-expanded">
+				<div class="icon-cancel fa fa-times"></div>
 				<img src="../assets/images/work/rect-invite.jpg" alt="Wedding Invitation Suite">
 				<div class="card-content">
 					<div class="card-icon fa fa-wrench"></div>
@@ -346,13 +389,13 @@
 		<!-- <div class="center-badge"><span class="icon icon-gauge"></span></div> -->
 		<div class="content-wrap">
 			<div class="social-wrap">
-				<a class="icon icon-linkedin" href="https://www.linkedin.com/in/laurenpetersonspence" target="_blank"></a>
-				<a class="icon icon-github-circled-alt2" href="https://github.com/laurenpeterson" target="_blank"></a>
-				<a class="icon icon-stackoverflow" href="https://stackoverflow.com/users/4504641/ingridly?tab=profile" target="_blank"></a>
-				<a class="icon icon-instagram" href="https://www.instagram.com/ingridly/" target="_blank"></a>
+				<a class="icon fa fa-linkedin-square" href="https://www.linkedin.com/in/laurenpetersonspence" target="_blank"></a>
+				<a class="icon fa fa-github" href="https://github.com/laurenpeterson" target="_blank"></a>
+				<a class="icon fa fa-stack-overflow" href="https://stackoverflow.com/users/4504641/ingridly?tab=profile" target="_blank"></a>
+				<a class="icon fa fa-instagram" href="https://www.instagram.com/ingridly/" target="_blank"></a>
 			</div>
 			
-			<a class="res-buton resume-trigger" href="#resume"><span class="icon-doc-text-inv" href="#"></span> Résumé</a>
+			<a class="res-buton resume-trigger" href="#resume-panel"><span class="fa fa-file-text" href="#"></span> Résumé</a>
 			<p>&copy; Copyright Lauren Spence 2017</p>
 		</div>
 			

@@ -5,6 +5,7 @@
   $(function () {
       // document is ready
     var $drawerTrigger = $('.open-trigger'),
+        $closeSpan = $('.open-trigger span'),
     		$fullImg = $('.full-img'),
     		$textToggle = $('.slide-trigger'),
         $resTrigger = $('.resume-trigger'),
@@ -16,12 +17,12 @@
     $drawerTrigger.click(function(e){
     	e.preventDefault();
     	var drawerWidth = $rightDrawer.outerWidth();
-    	if (!$(this).hasClass('icon-cancel')) {
+    	if (!$(this).children('span').hasClass('icon-cancel')) {
     		$fullImg.css('left', - drawerWidth);
-    		$drawerTrigger.addClass('icon-cancel');
+    		$closeSpan.addClass('icon-cancel fa fa-times');
     	} else {
     		$fullImg.css('left', '0');
-    		$drawerTrigger.removeClass('icon-cancel');
+    		$closeSpan.removeClass('icon-cancel fa fa-times');
     	}
     });
 
@@ -60,22 +61,22 @@
       isMobile = true;
     }
 
-    // initialize skrollr if the window width is large enough
-    var initSkrollr = function() {
-      if (!isMobile && $(window).width() > 767) {
-        setTimeout(function() {
-          skrollr.init({
-            forceHeight: false,
-            smoothScrolling: false,
-            mobileDeceleration: 0.004
-          }); 
+    // // initialize skrollr if the window width is large enough
+    // var initSkrollr = function() {
+    //   if (!isMobile && $(window).width() > 767) {
+    //     setTimeout(function() {
+    //       skrollr.init({
+    //         forceHeight: false,
+    //         smoothScrolling: false,
+    //         mobileDeceleration: 0.004
+    //       }); 
 
-          // skrollr.menu.init(sk);
-        }, 1500);
-      }
-    }
+    //       // skrollr.menu.init(sk);
+    //     }, 1500);
+    //   }
+    // }
 
-    initSkrollr();
+    // initSkrollr();
 
 
     //Fade in animation
@@ -92,6 +93,7 @@
       });
     });
 
+    // hero title animation
     $titleList.each(function(i){
       var $this = $(this);
       setTimeout(function(){ 
@@ -100,28 +102,35 @@
       }, (i * 3000))
     });
 
-    $('.portfolio-card').click(function(e){
-      e.preventDefault();
-      $('.modal-wrap').show();
-      $('body').addClass('modal-active');
+    // Portfolio Modal
+    var $card = $('.portfolio-card'),
+        $modal = $('.modal-wrap'),
+        $body = $('body'),
+        $expandedCard = $('.portfolio-card-expanded'),
+        $closeX = $('.icon-cancel');
 
-      var index = $(this).index() - 1;
-      $('.portfolio-card-expanded').eq(index).show();
+    $card.click(function(e){
+      e.preventDefault();
+      $modal.show();
+      $body.addClass('modal-active');
+
+      var index = $(this).index();
+      $expandedCard.eq(index).show();
       // console.log('')
     });
 
     var closeModal = function() { 
-      $('body').removeClass('modal-active');
-      $('.portfolio-card-expanded').hide();
+      $body.removeClass('modal-active');
+      $expandedCard.hide();
     }
 
-    $('.modal-wrap').click(function(e) {
+    $modal.click(function(e) {
       // e.preventDefault();
-      var container = $('.portfolio-card-expanded');
+      // var container = $('.portfolio-card-expanded');
       console.log('beep');
       
       // if the target of the click isn't the container or a descendant of the container
-      if (!container.is(e.target) && container.has(e.target).length === 0) 
+      if (!$expandedCard.is(e.target) && $expandedCard.has(e.target).length === 0) 
       {
         console.log('boop');
         $(this).hide();
@@ -129,8 +138,8 @@
       }
     })
 
-    $('.icon-cancel').click(function(){
-      $('.modal-wrap').hide();
+    $closeX.click(function(){
+      $modal.hide();
       closeModal();
     })
 

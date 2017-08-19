@@ -23,13 +23,11 @@
 	}
 }
 
-
-
 .icon {
 	// width: 40px;
 	// height: 40px;
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	color: #FFF;
 	font-size: 40px;
 	border-bottom: none;
@@ -84,6 +82,10 @@
 	position: absolute;
 	right: 0;
 	top: 0;
+
+	.icon-cancel {
+		margin-right: 1em;
+	}
 }
 
 .left-solo-link {
